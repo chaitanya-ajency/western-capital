@@ -48,10 +48,10 @@
     }
 }
 .scrolltop {
-    display: none;
+    display: block;
 }
 .scrolldown {
-    display: block;
+    display: none;
 }
 @media screen and (min-width: 992px) {
     .scrolled-top {
@@ -134,7 +134,7 @@ header {
             margin: auto;
             display: flex;
             justify-content: center;
-            margin-top: -7.3%;
+            margin-top: -123px;
             position: relative;
             z-index: 9;
             .carousel-control-prev {
