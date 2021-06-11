@@ -114,9 +114,23 @@ header {
             font-size: 2.5em;
         }
         @media screen and (min-width: 992px) {
-            .carousel-item img {
+            .carousel-item{
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    background-image: url(../images/overlay.png);
+                    background-size: cover;
+                }
+                 img {
                 height: 100vh;
                 object-fit: cover;
+            }
             }
             .banner-text {
                 position: absolute;

@@ -62,13 +62,17 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img alt="banner-image" class="d-block w-100" src="images/banner.png" />
+                    <img alt="banner-image" class="d-block w-100" src="images/banner2.png" />
                     <div class="banner-text">
-                        Creating a Trusted and Transparent Relationship in Financial Services
+                        State of the Art Technology Support to Partners
                     </div>
                 </div>
-
-                <img alt="" class="banner-overlay" src="images/overlay.png">
+                <div class="carousel-item">
+                    <img alt="banner-image" class="d-block w-100" src="images/banner3.png" />
+                    <div class="banner-text">
+                        New Age NBFC with Unique Product Propositions
+                    </div>
+                </div>
             </div>
 
             <div class="navigation-bg d-none d-md-block">
@@ -93,13 +97,11 @@
             $(window).scroll(function() {
                 var scroll = $(window).scrollTop();
                 if (scroll > 50) {
-                    $(".navbar").addClass('scrolled-down');
-                    $(".navbar").removeClass('scrolled-top');
+                    $(".navbar").addClass('scrolled-down').removeClass('scrolled-top');
 
                 };
                 if (scroll < 50) {
-                    $(".navbar").addClass('scrolled-top');
-                    $(".navbar").removeClass('scrolled-down');
+                    $(".navbar").addClass('scrolled-top').removeClass('scrolled-down');
 
                 }
             })
