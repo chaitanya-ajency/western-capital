@@ -42,6 +42,12 @@ body {
 .fw--400 {
     font-weight: 400;
 }
+.f-80 {
+        font-size: 2em;
+    }
+    .f-60 {
+        font-size: 2em;
+    }
 @media screen and (min-width: 768px) {
     .f-18 {
         font-size: 18px;
@@ -52,16 +58,21 @@ body {
     .f-28 {
         font-size: 32px;
     }
-    .f-80 {
-        font-size: 80px;
-    }
-    .f-60 {
-        font-size: 60px;
-    }
+   
     .author {
         font-size: 20px;
     }
 }
+@media screen and (min-width: 992px) {
+    
+    .f-60 {
+        font-size: 60px;
+    }
+     .f-80 {
+        font-size: 80px;
+    }
+}
+
 
 .navbar {
     width: 100%;
@@ -830,6 +841,16 @@ footer {
         color: #fff;
     }
     @media screen and (min-width: 992px) {
+        .first-col {
+            padding-top: 165px;
+            padding-bottom: 150px;
+            color: #fff;
+        }
+        h2 {
+            font-size: 40px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
         .first-col {
             padding-top: 165px;
             padding-left: 120px;
