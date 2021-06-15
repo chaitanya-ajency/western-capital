@@ -148,8 +148,8 @@ body {
             &:hover {
                 border-bottom: 0px !important;
                 color: #000;
-                background-color: $theme-color;
-                color: #fff;
+                background-color: #02478c;
+                color: #aeadad !important;
                 &::before {
                     display: none;
                 }
@@ -1043,9 +1043,14 @@ footer {
 }
 
 .number-container {
+        padding-top: 30px;
     @media screen and (min-width: 768px) {
+    padding-top: 0;
         .title {
             transform: translateY(50px);
+            position: relative;
+            z-index: 1;
+
         }
     }
     @media screen and (min-width: 992px) {
@@ -1055,8 +1060,25 @@ footer {
     }
 
     .building {
-        width: 100%;
         position: relative;
+        width: 100%;
+
+        @media screen and (max-width: 767px) {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            flex-wrap: wrap;
+
+          
+            .building__item {
+                width: 40%;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            width: 100%;
+        }
 
         img {
             width: 100%;
@@ -1065,7 +1087,10 @@ footer {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-end;
+            @media screen and (min-width: 768px) {
+                align-items: flex-end;
+            }
+
             strong {
                 display: block;
                 margin-right: -14px;
@@ -1089,16 +1114,22 @@ footer {
             font-style: italic;
             text-transform: uppercase;
             display: block;
-            margin-left: auto;
-            &:nth-child(3) {
-                margin-right: 20px;
-            }
-            &:nth-child(4) {
-                margin-right: 40px;
+
+            @media screen and (min-width: 768px) {
+                margin-left: auto;
+                &:nth-child(3) {
+                    margin-right: 20px;
+                }
+                &:nth-child(4) {
+                    margin-right: 40px;
+                }
             }
         }
         &__item {
-            position: absolute;
+            @media screen and (min-width: 768px) {
+                position: absolute;
+            }
+
             z-index: 50;
             margin-left: -15px; //sub half of width
             margin-top: 15px; // add half of height
@@ -1204,7 +1235,9 @@ footer {
         &__num {
             line-height: 2;
             font-weight: bold;
-            position: absolute;
+            @media screen and (min-width: 768px) {
+                position: absolute;
+            }
             top: 7px;
             left: 7px;
             z-index: 100;
