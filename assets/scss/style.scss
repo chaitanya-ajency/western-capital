@@ -386,7 +386,10 @@ header {
 
 //========= Why-choose-WesternCapital ============//
 .Why-choose-WesternCapital {
-    background-image: url(../images/bg-patter.png);
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/bg-patter.png);
+    }
+
     background-repeat: no-repeat;
     background-position-x: 0;
     padding-top: 30px;
@@ -661,7 +664,10 @@ footer {
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url(../images/tabsleft.png);
+        @media screen and (min-width: 768px) {
+            background-image: url(../images/tabsleft.png);
+        }
+
         background-repeat: no-repeat;
         background-position: bottom left;
         background-size: contain;
@@ -676,7 +682,10 @@ footer {
         width: 100%;
         height: 100%;
         bottom: 0;
-        background-image: url(../images/tabsright.png);
+        @media screen and (min-width: 768px) {
+            background-image: url(../images/tabsright.png);
+        }
+
         background-repeat: no-repeat;
         background-position: bottom right;
         background-size: contain;
@@ -687,13 +696,15 @@ footer {
         margin-bottom: 20px;
         border-bottom: 0;
         position: relative;
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            height: 3px;
-            width: 100%;
-            background: Linear-Gradient(to right, #fdfdfd25, #02478c, #02478c, #fdfdfd25);
+        @media screen and (min-width: 768px) {
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                height: 3px;
+                width: 100%;
+                background: Linear-Gradient(to right, #fdfdfd25, #02478c, #02478c, #fdfdfd25);
+            }
         }
     }
     .tab-content {
@@ -723,8 +734,12 @@ footer {
             color: #959a96;
             font-weight: bold;
             text-transform: uppercase;
-            padding: 15px 25px;
+
             width: 100%;
+            @media screen and (min-width: 768px) {
+                padding: 15px 25px;
+            }
+
             @media screen and (min-width: 992px) {
                 min-width: 250px;
             }
@@ -754,6 +769,33 @@ footer {
         @media screen and (min-width: 992px) {
             max-width: 900px;
             margin: auto;
+        }
+    }
+    .slick-track {
+        .slick-slide {
+            &:nth-child(even) {
+                margin-top: 45px;
+            }
+            &:nth-child(1) {
+                .team {
+                    transform: translateX(-42px);
+                }
+            }
+            &:nth-child(2) {
+                .team {
+                    transform: translateX(-42px);
+                }
+            }
+            &:nth-child(3) {
+                .team {
+                    transform: translateX(-42px);
+                }
+            }
+            &:nth-child(4) {
+                .team {
+                    transform: translateX(-42px);
+                }
+            }
         }
     }
     @media screen and (min-width: 992px) {
@@ -1171,46 +1213,22 @@ footer {
 
 .number-container {
     padding-top: 30px;
-    @media screen and (min-width: 768px) {
-        padding-top: 0;
-        .title {
-            transform: translateY(50px);
-            position: relative;
-            z-index: 1;
-        }
-    }
-    @media screen and (min-width: 992px) {
-        .title {
-            transform: translateY(100px);
-        }
+    .title {
+        padding-bottom: 30px;
     }
     .building {
         position: relative;
         width: 100%;
         @media screen and (max-width: 767px) {
             display: flex;
-            justify-content: space-between;
-            width: 80%;
-            margin: auto;
+            justify-content: space-around;
             text-align: center;
             flex-wrap: wrap;
             .building__item {
                 width: 40%;
             }
         }
-        @media screen and (min-width: 768px) {
-            width: 100%;
-        }
-        img {
-            width: 100%;
-        }
         .skew-text {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            @media screen and (min-width: 768px) {
-                align-items: flex-end;
-            }
             strong {
                 display: block;
                 margin-right: -14px;
@@ -1234,126 +1252,11 @@ footer {
             font-style: italic;
             text-transform: uppercase;
             display: block;
-            @media screen and (min-width: 768px) {
-                margin-left: auto;
-                &:nth-child(3) {
-                    margin-right: 20px;
-                }
-                &:nth-child(4) {
-                    margin-right: 40px;
-                }
-            }
         }
-        &__item {
-            @media screen and (min-width: 768px) {
-                position: absolute;
-            }
-            z-index: 50;
-            margin-left: -15px; //sub half of width
-            margin-top: 15px; // add half of height
-            &--1 {
-                @media screen and (min-width: 768px) {
-                    top: 25%;
-                    left: 42%;
-                    text-align: right;
-                    font-size: 0.7em;
-                }
-                @media screen and (min-width: 992px) {
-                    font-size: 1em;
-                    top: 25%;
-                    left: 36%;
-                }
-                @media screen and (min-width: 1200px) {
-                    top: 25%;
-                    left: 39%;
-                }
-                @media screen and (min-width: 1366px) {
-                    font-size: 1em;
-                    top: 28%;
-                    left: 40%;
-                    text-align: right;
-                }
-            }
-            &--2 {
-                @media screen and (min-width: 768px) {
-                    top: 22%;
-                    left: 74%;
-                    text-align: right;
-                    font-size: 0.7em;
-                }
-                @media screen and (min-width: 992px) {
-                    font-size: 1em;
-                    top: 20%;
-                    left: 64%;
-                }
-                @media screen and (min-width: 1200px) {
-                    left: 65%;
-                    top: 23%;
-                }
-                @media screen and (min-width: 1366px) {
-                    font-size: 1em;
-                    top: 28%;
-                    left: 66%;
-                    text-align: right;
-                }
-            }
-            &--3 {
-                @media screen and (min-width: 768px) {
-                    font-size: 0.7em;
-                    bottom: 50%;
-                    left: 15%;
-                    text-align: right;
-                }
-                @media screen and (min-width: 992px) {
-                    font-size: 1em;
-                    left: 13%;
-                    bottom: 52%;
-                }
-                @media screen and (min-width: 1200px) {
-                    left: 18%;
-                    bottom: 45%;
-                }
-                @media screen and (min-width: 1366px) {
-                    font-size: 1em;
-                    left: 17%;
-                    text-align: right;
-                    bottom: 48%;
-                }
-            }
-            &--4 {
-                @media screen and (min-width: 768px) {
-                    font-size: 0.7em;
-                    bottom: 50%;
-                    left: 47%;
-                    text-align: right;
-                    width: 200px;
-                }
-                @media screen and (min-width: 992px) {
-                    font-size: 1em;
-                    left: 40%;
-                    bottom: 52%;
-                    width: 200px;
-                }
-                @media screen and (min-width: 1200px) {
-                    left: 42%;
-                    bottom: 49%;
-                    width: 200px;
-                }
-                @media screen and (min-width: 1366px) {
-                    font-size: 1em;
-                    top: 50%;
-                    left: 44%;
-                    text-align: right;
-                    width: 200px;
-                }
-            }
-        }
+
         &__num {
             line-height: 2;
             font-weight: bold;
-            @media screen and (min-width: 768px) {
-                position: absolute;
-            }
             top: 7px;
             left: 7px;
             z-index: 100;
@@ -1372,4 +1275,40 @@ footer {
     transform: translateX(0);
     transform-origin: right;
     opacity: 1;
+}
+//////////////////////////////@at-root
+.believe-in-numbers {
+    @media screen and (min-width: 768px) {
+        margin-top: -220px;
+        position: relative;
+        margin-bottom: -110px;
+        .title {
+            position: absolute;
+            top: 35%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+    @media screen and (min-width: 992px) {
+        margin-top: -300px;
+        position: relative;
+        margin-bottom: -150px;
+        .title {
+            top: 38%;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: -440px;
+        position: relative;
+        margin-bottom: -220px;
+        .title {
+            top: 42%;
+        }
+    }
+    @media screen and (min-width: 1366px) {
+        .title {
+            top: 40%;
+        }
+    }
 }
