@@ -1263,7 +1263,10 @@ footer {
         }
     }
 }
-
+.meet-team{
+    .slick-dots {
+    bottom: -100px;}
+}
 .tab-pane {
     transform: translateX(100px);
     transform-origin: right;
@@ -1286,6 +1289,7 @@ footer {
 .tab-content > .active,
 .pill-content > .active {
     height: auto; /* let the content decide it */
+    padding-bottom: 50px;
 } /* bootstrap hack end */
 //////////////////////////////@at-root
 .believe-in-numbers {
