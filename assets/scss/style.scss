@@ -7,7 +7,7 @@ body {
     font-family: "Segoe UI";
 }
 
-.title {
+.title  {
     font-weight: bold;
     text-align: center;
     color: #000000;
@@ -1276,6 +1276,17 @@ footer {
     transform-origin: right;
     opacity: 1;
 }
+/* bootstrap hack: fix content width inside hidden tabs */
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+    display: block; /* undo display:none */
+    height: 0; /* height:0 is also invisible */
+    overflow: hidden; /* no-overflow */
+}
+.tab-content > .active,
+.pill-content > .active {
+    height: auto; /* let the content decide it */
+} /* bootstrap hack end */
 //////////////////////////////@at-root
 .believe-in-numbers {
     @media screen and (min-width: 768px) {
