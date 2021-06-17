@@ -7,7 +7,7 @@ body {
     font-family: "Segoe UI";
 }
 
-.title  {
+.title {
     font-weight: bold;
     text-align: center;
     color: #000000;
@@ -625,22 +625,42 @@ footer {
 }
 
 .collaborate-banner {
-    .text-box {
-        width: 100%;
-        left: 0;
+    .container {
         position: absolute;
         bottom: 10%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .text-box {
+        width: 100%;
         color: #fff;
         text-align: center;
         .title {
-            @media screen and (min-width: 992px) {
-                margin-top: 15px;
-                font-size: 40px;
-            }
+            font-size: 25px;
             color: #fff;
         }
         .subtitle {
-            font-size: 30px;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+         @media screen and (min-width: 768px) {
+        
+        }
+        @media screen and (min-width: 992px) {
+            .title {
+                margin-top: 15px;
+                font-size: 40px;
+            }
+            .subtitle {
+                font-size: 30px;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        img {
+            height: 50vh;
+            object-fit: cover;
         }
     }
 }
@@ -748,6 +768,8 @@ footer {
         .nav-link {
             border-bottom: 3px solid #02478c;
             margin-bottom: 0px;
+
+            height: 100%;
         }
     }
     .nav-link.active {
@@ -771,33 +793,36 @@ footer {
             margin: auto;
         }
     }
-    .slick-track {
-        .slick-slide {
-            &:nth-child(even) {
-                margin-top: 45px;
-            }
-            &:nth-child(1) {
-                .team {
-                    transform: translateX(-42px);
+    @media screen and (min-width: 768px) {
+        .slick-track {
+            .slick-slide {
+                &:nth-child(even) {
+                    margin-top: 45px;
                 }
-            }
-            &:nth-child(2) {
-                .team {
-                    transform: translateX(-42px);
-                }
-            }
-            &:nth-child(3) {
-                .team {
-                    transform: translateX(-42px);
-                }
-            }
-            &:nth-child(4) {
-                .team {
-                    transform: translateX(-42px);
-                }
+                // &:nth-child(1) {
+                //     .team {
+                //         transform: translateX(-42px);
+                //     }
+                // }
+                // &:nth-child(2) {
+                //     .team {
+                //         transform: translateX(-42px);
+                //     }
+                // }
+                // &:nth-child(3) {
+                //     .team {
+                //         transform: translateX(-42px);
+                //     }
+                // }
+                // &:nth-child(4) {
+                //     .team {
+                //         transform: translateX(-42px);
+                //     }
+                // }
             }
         }
     }
+
     @media screen and (min-width: 992px) {
         .team-row {
             margin-top: 50px;
@@ -835,7 +860,13 @@ footer {
             z-index: 99;
         }
     }
-    .team-text {
+        .team-text {
+            padding-top: 8px;
+            font-weight: bold;
+            text-align: center;
+        }
+   @media screen and (min-width: 768px) {
+        .team-text {
         font-size: 14px;
         transition: all 0.2s ease-in-out;
         opacity: 0;
@@ -852,8 +883,39 @@ footer {
         transform: translateY(100%);
         z-index: 20;
     }
+   }
+   
+   
+}
+.meet-team {
+    .slick-dots {
+        bottom: -100px;
+    }
+}
+.tab-pane {
+    transform: translateX(100px);
+    transform-origin: right;
+    opacity: 0;
+    transition: transform 0.2s ease 0s;
 }
 
+.tab-pane.fade.active.show {
+    transform: translateX(0);
+    transform-origin: right;
+    opacity: 1;
+}
+/* bootstrap hack: fix content width inside hidden tabs */
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+    display: block; /* undo display:none */
+    height: 0; /* height:0 is also invisible */
+    overflow: hidden; /* no-overflow */
+}
+.tab-content > .active,
+.pill-content > .active {
+    height: auto; /* let the content decide it */
+    padding-bottom: 50px;
+} /* bootstrap hack end */
 .services {
     padding-bottom: 30px;
     background-image: url(../images/Subtract.png);
@@ -1263,34 +1325,7 @@ footer {
         }
     }
 }
-.meet-team{
-    .slick-dots {
-    bottom: -100px;}
-}
-.tab-pane {
-    transform: translateX(100px);
-    transform-origin: right;
-    opacity: 0;
-    transition: transform 0.2s ease 0s;
-}
 
-.tab-pane.fade.active.show {
-    transform: translateX(0);
-    transform-origin: right;
-    opacity: 1;
-}
-/* bootstrap hack: fix content width inside hidden tabs */
-.tab-content > .tab-pane,
-.pill-content > .pill-pane {
-    display: block; /* undo display:none */
-    height: 0; /* height:0 is also invisible */
-    overflow: hidden; /* no-overflow */
-}
-.tab-content > .active,
-.pill-content > .active {
-    height: auto; /* let the content decide it */
-    padding-bottom: 50px;
-} /* bootstrap hack end */
 //////////////////////////////@at-root
 .believe-in-numbers {
     @media screen and (min-width: 768px) {
