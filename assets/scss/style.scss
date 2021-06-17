@@ -8,6 +8,7 @@ body {
 }
 
 .title {
+    z-index: 2;
     font-weight: bold;
     text-align: center;
     color: #000000;
@@ -644,8 +645,7 @@ footer {
             font-size: 20px;
             margin-bottom: 5px;
         }
-         @media screen and (min-width: 768px) {
-        
+        @media screen and (min-width: 768px) {
         }
         @media screen and (min-width: 992px) {
             .title {
@@ -860,32 +860,30 @@ footer {
             z-index: 99;
         }
     }
-        .team-text {
-            padding-top: 8px;
-            font-weight: bold;
-            text-align: center;
-        }
-   @media screen and (min-width: 768px) {
-        .team-text {
-        font-size: 14px;
-        transition: all 0.2s ease-in-out;
-        opacity: 0;
-        padding: 30px;
-        width: 90%;
-        height: 90%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        background-color: white;
-        transform: translateY(100%);
-        z-index: 20;
+    .team-text {
+        padding-top: 8px;
+        font-weight: bold;
+        text-align: center;
     }
-   }
-   
-   
+    @media screen and (min-width: 768px) {
+        .team-text {
+            font-size: 14px;
+            transition: all 0.2s ease-in-out;
+            opacity: 0;
+            padding: 30px;
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: white;
+            transform: translateY(100%);
+            z-index: 20;
+        }
+    }
 }
 .meet-team {
     .slick-dots {
@@ -1039,12 +1037,12 @@ footer {
                 .desc-title {
                     font-weight: 600;
                     font-size: 28px;
-                    margin: 30px 0 20px;
+                    margin: 0px 0 20px;
                     padding-bottom: 20px;
                     border-bottom: 2px solid #ee6c4d;
                 }
                 .desc {
-                    font-size: 22px;
+                    font-size: 18px;
                 }
             }
         }
@@ -1105,15 +1103,23 @@ footer {
 @media screen and (min-width: 992px) {
     .first-col {
         width: 25%;
+        .title {
+            position: relative;
+            z-index: 9;
+        }
     }
     .second-col {
         width: 75%;
+        position: relative;
+        z-index: 9;
     }
 }
 
 //////////////////// Partners
 .our-partner {
     padding: 50px 0;
+    position: relative;
+    z-index: 9;
     .multiple-items {
         margin-top: 45px;
         .brands {
@@ -1328,6 +1334,10 @@ footer {
 
 //////////////////////////////@at-root
 .believe-in-numbers {
+    img {
+        position: relative;
+        z-index: 1;
+    }
     @media screen and (min-width: 768px) {
         margin-top: -220px;
         position: relative;
