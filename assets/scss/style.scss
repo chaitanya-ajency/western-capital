@@ -1635,8 +1635,7 @@ footer {
 .contact-us {
     background: #e6edf3;
     padding-top: 92px;
-}
-.icon-text {
+    .icon-text {
     img {
         width: 25px;
         height: 25px;
@@ -1672,6 +1671,8 @@ footer {
         }
     }
 }
+}
+
 .get-direction {
     font-weight: bold;
     @media screen and (min-width: 992px) {
