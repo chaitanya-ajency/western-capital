@@ -7,8 +7,9 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     <!-- Bootstrap CSS -->
-    <link rel="preload" href="/assets/images/banner.png" as="image">
+    <script src="https://kit.fontawesome.com/b73881b7c2.js" crossorigin="anonymous"></script>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
     <link href="assets/css/style.css" rel="stylesheet" />
@@ -17,13 +18,13 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg ">
         <div class="container">
             <a class="navbar-brand scrolltop" href="#"><img alt="" src="assets/images/LOGO1.png" class="logo"></a>
             <a class="navbar-brand scrolldown" href="#"><img alt="" src="assets/images/onscroll.png" class="logo"></a>
 
             <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
-                        <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>
                     </button>
             <div class="collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
                 <ul class="navbar-nav text-capitalize mb-2 mb-lg-0">
@@ -39,21 +40,108 @@
                     <li class="nav-item dropdown">
                         <a aria-expanded="false" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdown" role="button">company</a>
                         <ul aria-labelledby="navbarDropdown" class="dropdown-menu px-2">
-                            <li class="border-bottom pb-2">
-                                <a class="dropdown-item" href="#">our advisor</a>
+                            <li class="border-bottom pb-2 pe-md-5">
+                                <a class="dropdown-item" href="#">our advisors</a>
                             </li>
                             <li class="pt-2">
                                 <a class="dropdown-item" href="#">our promoters</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item mt-3 mt-lg-0 me-0">
+                    <li class="nav-item mt-2 mt-lg-0 me-0">
                         <a class="nav-link login-btn" href="#">login</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- <main class="main-content">
+        <section class="slideshow">
+            <div class="slideshow-inner">
+                <div class="slides">
+                    <div class="slide is-active ">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="heading">
+                                    Creating a Trusted and Transparent Relationship in Financial Services
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/images/banner.jpg" alt="" class="image" />
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="heading">
+                                    State of the Art Technology Support to Partners
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/images/banner2.jpg" alt="" class="image" />
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="heading">
+                                    New Age NBFC with Unique Product Propositions
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/images/banner3.jpg" alt="" class="image" />
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="heading w-75">
+                                    Maximum Geographical Reach.
+                                </div>
+                                <h5 class="subtitle">
+                                    We are serving customers in maximum locations through our partners
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/images/banner4.jpg" alt="" class="image" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arrows">
+                    <div class="arrow prev">
+                        <span class="svg svg-arrow-left">
+            <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+            <span class="alt sr-only"></span>
+                        </span>
+                    </div>
+                    <div class="arrow next">
+                        <span class="svg svg-arrow-right">
+            <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+            <span class="alt sr-only"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation-bg d-none d-lg-block">
+                <img alt="diamond-pattrn" class="img-fluid w-100" src="assets/images/nav-image.png">
+
+                <button class="carousel-control-prev arrows" data-bs-slide="prev" data-bs-target="#carouselExampleControls" type="button">
+                        <img alt="arrows" src="assets/images/arrow-left.png" class="img-fluid arrow" width="30px">
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                <button class="carousel-control-next arrows" data-bs-slide="next" data-bs-target="#carouselExampleControls" type="button">
+                        <img alt="arrows" src="assets/images/arrow-right.png" class="img-fluid arrow" width="30px">
+                        <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
+        </section>
+
+    </main> -->
     <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleControls">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -110,11 +198,11 @@
     <!-- ============ Why choose WesternCapital ============= -->
     <section class="Why-choose-WesternCapital">
         <div class="container">
-            <h3 class="title">
+            <h2 class="title">
                 Why choose WesternCapital
-            </h3>
+            </h2>
             <div class="row justify-content-md-center">
-                <div class="col-md-4 col-xl-3">
+                <div class="col-md-4 col-xl-3" data-aos="fade-up" data-aos-duration="1000">
                     <div class="item">
                         <img src="assets/images/Group1.png" alt="WesternCapital">
                         <h5 class="item-title">
@@ -122,7 +210,7 @@
                         </h5>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-4 dotted">
+                <div class="col-md-4 col-lg-4 dotted" data-aos="fade-up" data-aos-duration="1200">
                     <div class="item">
                         <img src="assets/images/Group2.png" alt="WesternCapital">
                         <h5 class="item-title">
@@ -130,27 +218,26 @@
                         </h5>
                     </div>
                 </div>
-                <div class="col-md-4 col-xl-3">
+                <div class="col-md-4 col-xl-3" data-aos="fade-up" data-aos-duration="1400">
                     <div class="item">
                         <img src="assets/images/Group3.png" alt="WesternCapital">
                         <h5 class="item-title">
-                            100% Digital Process
+                            100% Digital <br> Process
                         </h5>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- ============ End ============= -->
     <!-- ============ Message from the CEO ============= -->
     <section class="Message-from-the-ceo  mb-3 mb-md-5">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-5">
+                <div class="col-md-5" data-aos="fade-up" data-aos-duration="1000">
                     <img src="assets/images/ceo.png" alt="" class="d-block w-100">
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7" data-aos="fade-up" data-aos-duration="1500">
                     <div class="ps-md-5">
                         <h3 class="title text-md-start">
                             Message from the CEO
@@ -170,19 +257,21 @@
     <!-- ============ End ============= -->
     <!-- ============ collaborate banner ============= -->
     <section class="collaborate-banner position-relative">
-        <img src="assets/images/collaborate-Banner.jpg" alt="" class="w-100 d-block">
-        <div class="text-box">
-            <p class="subtitle">
-                We invite you to collabrate with us
-            </p>
-            <p class="title ">
-                Because we value what you bring to the Table
-            </p>
+        <img src="assets/images/collaborate-Banner.jpg" alt="" class="w-100 d-block" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="text-box">
+                <p class="subtitle">
+                    We invite you to collabrate with us
+                </p>
+                <p class="title ">
+                    Because we value what you bring to the Table
+                </p>
+            </div>
         </div>
     </section>
     <!-- ============ End ============= -->
     <!-- ============ Tabs ============= -->
-    <section class="tabs-section">
+    <section class="tabs-section" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
             <ul class="nav nav-tabs justify-content-md-center" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -195,9 +284,9 @@
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-                    <h3 class="title text-center">
+                    <h1 class="title text-center">
                         Looking at Solutions to your Financial Needs?
-                    </h3>
+                    </h1>
                     <h5 class="subtitle text-center">
                         You have come to the right place
                     </h5>
@@ -207,87 +296,152 @@
 
                     </div>
                 </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                    <h3 class="title mb-3">
+                <div class="tab-pane fade tab-2" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <h1 class="title my-3 my-md-5">
                         Meet our Team
-                    </h3>
-                    <div class="row team-row">
-                        <div class="col-md-6 col-xl-3 px-0">
-                            <div class="team">
-                                <div class="img w-100">
-                                    <img src="assets/images/team-1.png" class="img-fluid w-100" alt="">
-                                    <div class="team-text text-center">
-                                        <div class="team-mem text-capitalize">
-                                            chandra mouli
-                                        </div>
-                                        <hr class="separator">
-                                        <div class="team-pos text-theme-color mb-md-2 fw--700">
-                                            HEAD OF BUSINESS
-                                        </div>
-                                        <div class="fw--600 text-start">
-                                            He is MBA Graduate and EPBM from IIM, Calcutta. He worked for 25 years in financial services (retail, consumer & mid corporate finance). He worked with companies like Kotak Mahindra, ICICI, Reliance & Clix Capital.
+                    </h1>
 
-                                        </div>
+                    <div class="meet-team">
+                        <div class="team">
+                            <div class="img w-100">
+                                <img src="assets/images/team-1.png" class="img-fluid w-100" alt="">
+                                <div class="team-text">
+                                    <div class="team-mem text-capitalize">
+                                        chandra mouli
+                                    </div>
+                                    <hr class="separator">
+                                    <div class="team-pos text-theme-color mb-md-2 fw--700">
+                                        HEAD OF BUSINESS
+                                    </div>
+                                    <div class="fw--600 text-center text-md-start ">
+                                        He is MBA Graduate and EPBM from IIM, Calcutta. He worked for 25 years in financial services (retail, consumer & mid corporate finance). He worked with companies like Kotak Mahindra, ICICI, Reliance & Clix Capital.
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xl-3 px-0">
-                            <div class="team">
-                                <div class="img w-100">
-                                    <img src="assets/images/team-2.png" class="img-fluid w-100" alt="">
-                                    <div class="team-text text-center">
-                                        <div class="team-mem  text-capitalize">
-                                            chandra mouli
-                                        </div>
-                                        <hr class="separator">
-                                        <div class="team-pos text-theme-color mb-md-2 fw--700">
-                                            HEAD OF BUSINESS
-                                        </div>
-                                        <div class="fw--600 text-start">
-                                            He is MBA Graduate and EPBM from IIM, Calcutta. He worked for 25 years in financial services (retail, consumer & mid corporate finance). He worked with companies like Kotak Mahindra, ICICI, Reliance & Clix Capital.
+                        <div class="team">
+                            <div class="img w-100">
+                                <img src="assets/images/team-2.png" class="img-fluid w-100" alt="">
+                                <div class="team-text">
+                                    <div class="team-mem  text-capitalize">
+                                        chandra mouli
+                                    </div>
+                                    <hr class="separator">
+                                    <div class="team-pos text-theme-color mb-md-2 fw--700">
+                                        HEAD OF BUSINESS
+                                    </div>
+                                    <div class="fw--600 text-center text-md-start ">
+                                        He is MBA Graduate and EPBM from IIM, Calcutta. He worked for 25 years in financial services (retail, consumer & mid corporate finance). He worked with companies like Kotak Mahindra, ICICI, Reliance & Clix Capital.
 
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xl-3 px-0">
-                            <div class="team">
-                                <div class="img w-100">
-                                    <img src="assets/images/team-3.png" class="img-fluid w-100" alt="">
-                                    <div class="team-text text-center">
-                                        <div class="team-mem  text-capitalize">
-                                            chandra mouli
-                                        </div>
-                                        <hr class="separator">
-                                        <div class="team-pos text-theme-color mb-md-2 fw--700">
-                                            HEAD OF BUSINESS
-                                        </div>
-                                        <div class="fw--600 text-start">
-                                            He is MBA Graduate and EPBM from IIM, Calcutta. He worked for 25 years in financial services (retail, consumer & mid corporate finance). He worked with companies like Kotak Mahindra, ICICI, Reliance & Clix Capital.
+                        <div class="team">
+                            <div class="img w-100">
+                                <img src="assets/images/team-3.png" class="img-fluid w-100" alt="">
+                                <div class="team-text">
+                                    <div class="team-mem  text-capitalize">
+                                        chandra mouli
+                                    </div>
+                                    <hr class="separator">
+                                    <div class="team-pos text-theme-color mb-md-2 fw--700">
+                                        HEAD OF BUSINESS
+                                    </div>
+                                    <div class="fw--600 text-center text-md-start ">
+                                        He is MBA Graduate and EPBM from IIM, Calcutta. He worked for 25 years in financial services (retail, consumer & mid corporate finance). He worked with companies like Kotak Mahindra, ICICI, Reliance & Clix Capital.
 
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xl-3 px-0">
-                            <div class="team">
-                                <div class="img w-100">
-                                    <img src="assets/images/team-4.png" class="img-fluid w-100" alt="">
-                                    <div class="team-text text-center">
-                                        <div class="team-mem  text-capitalize">
-                                            chandra mouli
-                                        </div>
-                                        <hr class="separator">
-                                        <div class="team-pos text-theme-color mb-md-2 fw--700">
-                                            HEAD OF BUSINESS
-                                        </div>
-                                        <div class="fw--600 text-start">
-                                            He is MBA Graduate and EPBM from IIM, Calcutta. He worked for 25 years in financial services (retail, consumer & mid corporate finance). He worked with companies like Kotak Mahindra, ICICI, Reliance & Clix Capital.
+                        <div class="team">
+                            <div class="img w-100">
+                                <img src="assets/images/team-4.png" class="img-fluid w-100" alt="">
+                                <div class="team-text">
+                                    <div class="team-mem  text-capitalize">
+                                        chandra mouli
+                                    </div>
+                                    <hr class="separator">
+                                    <div class="team-pos text-theme-color mb-md-2 fw--700">
+                                        HEAD OF BUSINESS
+                                    </div>
+                                    <div class="fw--600 text-center text-md-start ">
+                                        He is MBA Graduate and EPBM from IIM, Calcutta. He worked for 25 years in financial services (retail, consumer & mid corporate finance). He worked with companies like Kotak Mahindra, ICICI, Reliance & Clix Capital.
 
-                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team">
+                            <div class="img w-100">
+                                <img src="assets/images/team-1.png" class="img-fluid w-100" alt="">
+                                <div class="team-text">
+                                    <div class="team-mem text-capitalize">
+                                        chandra mouli
+                                    </div>
+                                    <hr class="separator">
+                                    <div class="team-pos text-theme-color mb-md-2 fw--700">
+                                        HEAD OF BUSINESS
+                                    </div>
+                                    <div class="fw--600 text-center text-md-start ">
+                                        He is MBA Graduate and EPBM from IIM, Calcutta. He worked for 25 years in financial services (retail, consumer & mid corporate finance). He worked with companies like Kotak Mahindra, ICICI, Reliance & Clix Capital.
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team">
+                            <div class="img w-100">
+                                <img src="assets/images/team-2.png" class="img-fluid w-100" alt="">
+                                <div class="team-text">
+                                    <div class="team-mem  text-capitalize">
+                                        chandra mouli
+                                    </div>
+                                    <hr class="separator">
+                                    <div class="team-pos text-theme-color mb-md-2 fw--700">
+                                        HEAD OF BUSINESS
+                                    </div>
+                                    <div class="fw--600 text-center text-md-start ">
+                                        He is MBA Graduate and EPBM from IIM, Calcutta. He worked for 25 years in financial services (retail, consumer & mid corporate finance). He worked with companies like Kotak Mahindra, ICICI, Reliance & Clix Capital.
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team">
+                            <div class="img w-100">
+                                <img src="assets/images/team-3.png" class="img-fluid w-100" alt="">
+                                <div class="team-text">
+                                    <div class="team-mem  text-capitalize">
+                                        chandra mouli
+                                    </div>
+                                    <hr class="separator">
+                                    <div class="team-pos text-theme-color mb-md-2 fw--700">
+                                        HEAD OF BUSINESS
+                                    </div>
+                                    <div class="fw--600 text-center text-md-start ">
+                                        He is MBA Graduate and EPBM from IIM, Calcutta. He worked for 25 years in financial services (retail, consumer & mid corporate finance). He worked with companies like Kotak Mahindra, ICICI, Reliance & Clix Capital.
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team">
+                            <div class="img w-100">
+                                <img src="assets/images/team-4.png" class="img-fluid w-100" alt="">
+                                <div class="team-text">
+                                    <div class="team-mem  text-capitalize">
+                                        chandra mouli
+                                    </div>
+                                    <hr class="separator">
+                                    <div class="team-pos text-theme-color mb-md-2 fw--700">
+                                        HEAD OF BUSINESS
+                                    </div>
+                                    <div class="fw--600 text-center text-md-start ">
+                                        He is MBA Graduate and EPBM from IIM, Calcutta. He worked for 25 years in financial services (retail, consumer & mid corporate finance). He worked with companies like Kotak Mahindra, ICICI, Reliance & Clix Capital.
+
                                     </div>
                                 </div>
                             </div>
@@ -297,47 +451,135 @@
             </div>
         </div>
     </section>
+
     <!-- ============ End ============= -->
     <!-- ============ our services ============= -->
     <section class="services">
+        <img src="https://ik.imagekit.io/adi1239457/Vector__25__sweT1gF8Q.png" alt="">
         <div class="container">
             <div class="d-flex flex-wrap services-container">
                 <div class="text">
                     <h3 class="f-80 title text-center text-lg-start my-3">
-                        Our services
+                        Our Services
                     </h3>
                     <p class="description">
                         Explore the various financial services that we offer to companies
                     </p>
                 </div>
                 <div class="image-item">
-                    <img src="assets/images/image1.png" class="w-100" alt="">
-                    <div class="item-text">
-                        <h2 class="description">Supply Chain Finance</h2>
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <div class="front">
+                            <img src="assets/images/image1.png" class="w-100" alt="">
+                            <div class="caption">
+                                <h2 class="description">Supply Chain Finance</h2>
+                            </div>
+                        </div>
+
+                        <div class="item-text">
+                            <img src="assets/images/image1.png" class="w-100" alt="">
+                            <div class="description2">
+                                <div class="desc-title">
+                                    Supply Chain Finance
+                                </div>
+                                <div class="desc">
+                                    Supply Chain Finance solutions to the vendors of our partners for better utilization of the working capital. Also, this will create stickiness in the relationship between Vendor and Partner.
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
                 <div class="image-item">
-                    <img src="assets/images/image2.png" class="w-100" alt="">
-                    <div class="item-text">
-                        <h2 class="description">Growth Capital</h2>
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <div class="front">
+                            <img src="assets/images/image2.png" class="w-100" alt="">
+                            <div class="caption">
+                                <h2 class="description">Growth Capital</h2>
+                            </div>
+                        </div>
+
+                        <div class="item-text">
+                            <img src="assets/images/image2.png" class="w-100" alt="">
+
+                            <div class="description2">
+                                <div class="desc-title">
+                                    Growth Capital
+                                </div>
+                                <div class="desc">
+                                    Term Loans to NBFC/Fintech/MFI to grow the business on their book.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="image-item">
-                    <img src="assets/images/image3.png" class="w-100" alt="">
-                    <div class="item-text">
-                        <h2 class="description">Structured Finance</h2>
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <div class="front">
+                            <img src="assets/images/image3.png" class="w-100" alt="">
+                            <div class="caption">
+                                <h2 class="description">Structured Finance</h2>
+                            </div>
+                        </div>
+
+                        <div class="item-text">
+                            <img src="assets/images/image3.png" class="w-100" alt="">
+                            <div class="description2">
+                                <div class="desc-title">
+                                    Structured Finance
+                                </div>
+                                <div class="desc">
+                                    Offer Hassle Free Venture Debt to new age companies who are looking at Debt before their Series C/ Series D Funding.
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
                 <div class="image-item">
-                    <img src="assets/images/image4.png" class="w-100" alt="">
-                    <div class="item-text">
-                        <h2 class="description">Partnership Model</h2>
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <div class="front">
+                            <img src="assets/images/image4.png" class="w-100" alt="">
+                            <div class="caption">
+                                <h2 class="description">Partnership Model</h2>
+                            </div>
+                        </div>
+
+                        <div class="item-text">
+                            <img src="assets/images/image4.png" class="w-100" alt="">
+                            <div class="description2">
+                                <div class="desc-title">
+                                    Partnership Model
+                                </div>
+                                <div class="desc">
+                                    Offer solutions to utilize the capacity (technology, manpower, operations &amp; market intelligence). It’s a win-win proposition with both the parties where partners can have better productivity and can get additional revenue through optimizing the resources
+                                    in a better and profitable way.
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
                 <div class="image-item">
-                    <img src="assets/images/image5.png" class="w-100" alt="">
-                    <div class="item-text">
-                        <h2 class="description">Venture Debt</h2>
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <div class="front">
+                            <img src="assets/images/image4.png" class="w-100" alt="">
+                            <div class="caption">
+                                <h2 class="description">Venture Debt</h2>
+                            </div>
+                        </div>
+
+                        <div class="item-text">
+                            <img src="assets/images/image4.png" class="w-100" alt="">
+                            <div class="description2">
+                                <div class="desc-title">
+                                    Venture Debt
+                                </div>
+                                <div class="desc">
+                                    Offer Hassle Free Venture Debt to new age companies who are looking at Debt before their Series C/ Series D Funding.
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -345,19 +587,17 @@
     </section>
     <!-- ============ End ============= -->
 
-
-
     <!-- ============ Benefits of Partnering with us ============= -->
     <section class="benefits d-lg-flex">
         <div class="first-col bg-theme-color">
-            <h3 class="text-center text-lg-start">
+            <h3 class="text-center title text-white text-lg-start">
                 Benefits of Partnering with us
             </h3>
         </div>
         <div class="second-col bg-grey">
             <div class="container">
                 <div class="row icon-text justify-content-md-evenly">
-                    <div class="col-md-3">
+                    <div class="col-md-3" data-aos="fade-up" data-aos-duration="1000">
                         <div class="item text-white">
                             <div class="image">
                                 <img src="assets/images/icon1.png" class="img-fluid" alt="">
@@ -368,7 +608,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3" data-aos="fade-up" data-aos-duration="1200">
                         <div class="item text-white">
                             <div class="image">
                                 <img src="assets/images/icon2.png" class="img-fluid" alt="">
@@ -380,7 +620,7 @@
                         </div>
 
                     </div>
-                    <div class="col-md-3 ">
+                    <div class="col-md-3 " data-aos="fade-up" data-aos-duration="1400">
 
                         <div class="item text-white">
                             <div class="image">
@@ -403,64 +643,70 @@
 
     <!-- ============ We Believe in Numbers ============= -->
 
-    <section class="number-container">
-        <h3 class="title">
-            We Believe in Numbers - Get to know us better
-        </h3>
-        <div class="building">
-            <img src="https://ik.imagekit.io/adi1239457/Group_1760__1__FaYlTfsvt.png" class="d-none d-md-block" alt="">
-            <div class="building__item building__item--1">
-                <div class="building__num" data-building="1">
-                    <div class="skew-text">
-                        <strong class="text-theme-color">3+</strong> <span class="text-num"> YEARS IN </span> <span class="text-num"> BUSINESS</span>
+    <section class="number-container d-block d-md-none">
+
+        <div class="container">
+            <h3 class="title">
+                We Believe in Numbers - Get to know us better
+            </h3>
+            <div class="building">
+                <div class="building__item building__item--1">
+                    <div class="building__num" data-building="1">
+                        <div class="skew-text">
+                            <strong class="text-theme-color "><span class="counter">3</span>+</strong> <span class="text-num"> YEARS IN  BUSINESS</span>
+                        </div>
                     </div>
+
+                </div>
+                <div class="building__item building__item--2">
+                    <div class="building__num" data-building="1">
+                        <div class="skew-text">
+                            <strong class="text-theme-color"><span class="counter">100</span>M+</strong> <span class="text-num"> worth BUSINESS</span>
+                            <span class="text-num"> managed</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="building__item building__item--3">
+                    <div class="building__num" data-building="1">
+                        <div class="skew-text">
+                            <strong class="text-orange"><span class="counter">70</span>+</strong> <span class="text-num"> companies  using our software</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="building__item building__item--4">
+                    <div class="building__num" data-building="1">
+                        <div class="skew-text">
+                            <strong class="text-orange"><span class="counter">15</span>+</strong> <span class="text-num"> states IN india where WE ARE BASED</span>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
-            <div class="building__item building__item--2">
-                <div class="building__num" data-building="1">
-                    <div class="skew-text">
-                        <strong class="text-theme-color">100M+</strong> <span class="text-num"> worth </span> <span class="text-num"> BUSINESS</span>
-                        <span class="text-num"> managed</span>
-                    </div>
-                </div>
-
-            </div>
-            <div class="building__item building__item--3">
-                <div class="building__num" data-building="1">
-                    <div class="skew-text">
-                        <strong class="text-orange">70+</strong> <span class="text-num"> companies </span> <span class="text-num"> using our</span>
-                        <span class="text-num"> software</span>
-                    </div>
-                </div>
-
-            </div>
-            <div class="building__item building__item--4">
-                <div class="building__num" data-building="1">
-                    <div class="skew-text">
-                        <strong class="text-orange">3+</strong> <span class="text-num"> states IN </span> <span class="text-num"> india where</span>
-                        <span class="text-num"> WE ARE BASED</span>
-                    </div>
-                </div>
-
-            </div>
-
         </div>
     </section>
     <!-- ============ End ============= -->
 
-
+    <section class="believe-in-numbers d-none d-md-block">
+        <h3 class="title">
+            We Believe in Numbers - Get to know us better
+        </h3>
+        <img src="assets/images/numbers-bg.png" alt="" class="img-fluid">
+    </section>
 
 
     <!-- ============ Our Partner ============= -->
     <section class="our-partner">
-        <h3 class="title text-center">
-            Our Partners
-        </h3>
-        <h5 class="subtitle text-center">
-            Our Network of companies represents large enterprises and Industry Leaders
-        </h5>
+
         <div class="container">
+            <h3 class="title text-center">
+                Our Partners
+            </h3>
+            <h5 class="subtitle text-center">
+                Our Network of companies represents large enterprises and Industry Leaders
+            </h5>
 
             <div class="multiple-items">
                 <div class="brands"><img src="assets/images/brand1.png" alt=""></div>
@@ -468,24 +714,30 @@
                 <div class="brands"><img src="assets/images/brand3.png" alt=""></div>
                 <div class="brands"><img src="assets/images/brand4.png" alt=""></div>
                 <div class="brands"><img src="assets/images/brand5.png" alt=""></div>
-                <div class="brands"><img src="assets/images/brand6.png" alt=""></div>
+                <div class="brands"><img src="assets/images/brand1.png" alt=""></div>
+                <div class="brands"><img src="assets/images/brand2.png" alt=""></div>
+                <div class="brands"><img src="assets/images/brand3.png" alt=""></div>
+                <div class="brands"><img src="assets/images/brand4.png" alt=""></div>
+                <div class="brands"><img src="assets/images/brand5.png" alt=""></div>
             </div>
 
         </div>
     </section>
+
     <!-- ============ End ============= -->
     <!-- ============ Our Partner ============= -->
     <section class="testimonial-section mb-5">
-        <h3 class="title text-center">
-            What our Customers have to say
-        </h3>
-        <h5 class="subtitle text-center">
-            Read below why companies love working with us
-        </h5>
+
         <div class="container">
+            <h3 class="title text-center">
+                What our Customers have to say
+            </h3>
+            <h5 class="subtitle text-center">
+                Read below why companies love working with us
+            </h5>
 
             <div class="testimonial-slide">
-                <div class="testimonial">
+                <div class="testimonial" data-aos="fade-up" data-aos-duration="1000">
 
                     <div class="testimonial-header">
                         <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user" />
@@ -499,10 +751,10 @@
                             ceo - loantap
                         </div>
                         <p>Florin is a front-end development master, delivering pixel-perfect css and html designs. He is professional, highly available and delivers on his promises - an all around pleasure to work with!</p>
-                        <i class="fas fa-quote-right"></i>
+
                     </div>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial" data-aos="fade-up" data-aos-duration="1500">
 
                     <div class="testimonial-header">
                         <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user" />
@@ -516,10 +768,10 @@
                             ceo - loantap
                         </div>
                         <p>Florin is a front-end development master, delivering pixel-perfect css and html designs. He is professional, highly available and delivers on his promises - an all around pleasure to work with!</p>
-                        <i class="fas fa-quote-right"></i>
+
                     </div>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial" data-aos="fade-up" data-aos-duration="2000">
 
                     <div class="testimonial-header">
                         <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user" />
@@ -533,10 +785,10 @@
                             ceo - loantap
                         </div>
                         <p>Florin is a front-end development master, delivering pixel-perfect css and html designs. He is professional, highly available and delivers on his promises - an all around pleasure to work with!</p>
-                        <i class="fas fa-quote-right"></i>
+
                     </div>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial" data-aos="fade-up" data-aos-duration="1000">
 
                     <div class="testimonial-header">
                         <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user" />
@@ -550,10 +802,10 @@
                             ceo - loantap
                         </div>
                         <p>Florin is a front-end development master, delivering pixel-perfect css and html designs. He is professional, highly available and delivers on his promises - an all around pleasure to work with!</p>
-                        <i class="fas fa-quote-right"></i>
+
                     </div>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial" data-aos="fade-up" data-aos-duration="1000">
 
                     <div class="testimonial-header">
                         <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user" />
@@ -567,10 +819,10 @@
                             ceo - loantap
                         </div>
                         <p>Florin is a front-end development master, delivering pixel-perfect css and html designs. He is professional, highly available and delivers on his promises - an all around pleasure to work with!</p>
-                        <i class="fas fa-quote-right"></i>
+
                     </div>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial" data-aos="fade-up" data-aos-duration="1000">
 
                     <div class="testimonial-header">
                         <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user" />
@@ -584,10 +836,10 @@
                             ceo - loantap
                         </div>
                         <p>Florin is a front-end development master, delivering pixel-perfect css and html designs. He is professional, highly available and delivers on his promises - an all around pleasure to work with!</p>
-                        <i class="fas fa-quote-right"></i>
+
                     </div>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial" data-aos="fade-up" data-aos-duration="1000">
 
                     <div class="testimonial-header">
                         <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user" />
@@ -601,10 +853,10 @@
                             ceo - loantap
                         </div>
                         <p>Florin is a front-end development master, delivering pixel-perfect css and html designs. He is professional, highly available and delivers on his promises - an all around pleasure to work with!</p>
-                        <i class="fas fa-quote-right"></i>
+
                     </div>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial" data-aos="fade-up" data-aos-duration="1000">
 
                     <div class="testimonial-header">
                         <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user" />
@@ -618,7 +870,7 @@
                             ceo - loantap
                         </div>
                         <p>Florin is a front-end development master, delivering pixel-perfect css and html designs. He is professional, highly available and delivers on his promises - an all around pleasure to work with!</p>
-                        <i class="fas fa-quote-right"></i>
+
                     </div>
                 </div>
             </div>
@@ -626,10 +878,6 @@
         </div>
     </section>
     <!-- ============ End ============= -->
-
-
-
-
     <footer class="position-relative">
         <div class="container">
             <div class="footer-brand">
@@ -698,6 +946,12 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js" integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/1.1.6/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <script>
         $(document).ready(function() {
             $(window).scroll(function() {
@@ -720,6 +974,8 @@
             slidesToShow: 5,
             slidesToScroll: 5,
             dots: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
             responsive: [{
                 breakpoint: 1024,
                 settings: {
@@ -749,6 +1005,8 @@
             slidesToShow: 3,
             slidesToScroll: 3,
             dots: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
             responsive: [{
                 breakpoint: 1200,
                 settings: {
@@ -763,6 +1021,284 @@
                 }
             }]
         });
+    </script>
+    <script>
+        $('.meet-team').slick({
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            dots: true,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+        });
+    </script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 5,
+                time: 1000
+            });
+        });
+    </script>
+    <script>
+        var slideshowDuration = 4000;
+        var slideshow = $('.main-content .slideshow');
+
+        function slideshowSwitch(slideshow, index, auto) {
+            if (slideshow.data('wait')) return;
+
+            var slides = slideshow.find('.slide');
+            var pages = slideshow.find('.pagination');
+            var activeSlide = slides.filter('.is-active');
+            var activeSlideImage = activeSlide.find('.image-container');
+            var newSlide = slides.eq(index);
+            var newSlideImage = newSlide.find('.image-container');
+            var newSlideContent = newSlide.find('.slide-content');
+            var newSlideElements = newSlide.find('.caption > *');
+            if (newSlide.is(activeSlide)) return;
+
+            newSlide.addClass('is-new');
+            var timeout = slideshow.data('timeout');
+            clearTimeout(timeout);
+            slideshow.data('wait', true);
+            var transition = slideshow.attr('data-transition');
+            if (transition == 'fade') {
+                newSlide.css({
+                    display: 'block',
+                    zIndex: 2
+                });
+                newSlideImage.css({
+                    opacity: 0
+                });
+
+                TweenMax.to(newSlideImage, 1, {
+                    alpha: 1,
+                    onComplete: function() {
+                        newSlide.addClass('is-active').removeClass('is-new');
+                        activeSlide.removeClass('is-active');
+                        newSlide.css({
+                            display: '',
+                            zIndex: ''
+                        });
+                        newSlideImage.css({
+                            opacity: ''
+                        });
+                        slideshow.find('.pagination').trigger('check');
+                        slideshow.data('wait', false);
+                        if (auto) {
+                            timeout = setTimeout(function() {
+                                slideshowNext(slideshow, false, true);
+                            }, slideshowDuration);
+                            slideshow.data('timeout', timeout);
+                        }
+                    }
+                });
+            } else {
+                if (newSlide.index() > activeSlide.index()) {
+                    var newSlideRight = 0;
+                    var newSlideLeft = 'auto';
+                    var newSlideImageRight = -slideshow.width() / 8;
+                    var newSlideImageLeft = 'auto';
+                    var newSlideImageToRight = 0;
+                    var newSlideImageToLeft = 'auto';
+                    var newSlideContentLeft = 'auto';
+                    var newSlideContentRight = 0;
+                    var activeSlideImageLeft = -slideshow.width() / 4;
+                } else {
+                    var newSlideRight = '';
+                    var newSlideLeft = 0;
+                    var newSlideImageRight = 'auto';
+                    var newSlideImageLeft = -slideshow.width() / 8;
+                    var newSlideImageToRight = '';
+                    var newSlideImageToLeft = 0;
+                    var newSlideContentLeft = 0;
+                    var newSlideContentRight = 'auto';
+                    var activeSlideImageLeft = slideshow.width() / 4;
+                }
+
+                newSlide.css({
+                    display: 'block',
+                    width: 0,
+                    right: newSlideRight,
+                    left: newSlideLeft,
+                    zIndex: 2
+                });
+
+                newSlideImage.css({
+                    width: slideshow.width(),
+                    right: newSlideImageRight,
+                    left: newSlideImageLeft
+                });
+
+                newSlideContent.css({
+                    width: slideshow.width(),
+                    left: newSlideContentLeft,
+                    right: newSlideContentRight
+                });
+
+                activeSlideImage.css({
+                    left: 0
+                });
+
+                TweenMax.set(newSlideElements, {
+                    y: 20,
+                    force3D: true
+                });
+                TweenMax.to(activeSlideImage, 1, {
+                    left: activeSlideImageLeft,
+                    ease: Power3.easeInOut
+                });
+
+                TweenMax.to(newSlide, 1, {
+                    width: slideshow.width(),
+                    ease: Power3.easeInOut
+                });
+
+                TweenMax.to(newSlideImage, 1, {
+                    right: newSlideImageToRight,
+                    left: newSlideImageToLeft,
+                    ease: Power3.easeInOut
+                });
+
+                TweenMax.staggerFromTo(newSlideElements, 0.8, {
+                    alpha: 0,
+                    y: 60
+                }, {
+                    alpha: 1,
+                    y: 0,
+                    ease: Power3.easeOut,
+                    force3D: true,
+                    delay: 0.6
+                }, 0.1, function() {
+                    newSlide.addClass('is-active').removeClass('is-new');
+                    activeSlide.removeClass('is-active');
+                    newSlide.css({
+                        display: '',
+                        width: '',
+                        left: '',
+                        zIndex: ''
+                    });
+
+                    newSlideImage.css({
+                        width: '',
+                        right: '',
+                        left: ''
+                    });
+
+                    newSlideContent.css({
+                        width: '',
+                        left: ''
+                    });
+
+                    newSlideElements.css({
+                        opacity: '',
+                        transform: ''
+                    });
+
+                    activeSlideImage.css({
+                        left: ''
+                    });
+
+                    slideshow.find('.pagination').trigger('check');
+                    slideshow.data('wait', false);
+                    if (auto) {
+                        timeout = setTimeout(function() {
+                            slideshowNext(slideshow, false, true);
+                        }, slideshowDuration);
+                        slideshow.data('timeout', timeout);
+                    }
+                });
+            }
+        }
+
+        function slideshowNext(slideshow, previous, auto) {
+            var slides = slideshow.find('.slide');
+            var activeSlide = slides.filter('.is-active');
+            var newSlide = null;
+            if (previous) {
+                newSlide = activeSlide.prev('.slide');
+                if (newSlide.length === 0) {
+                    newSlide = slides.last();
+                }
+            } else {
+                newSlide = activeSlide.next('.slide');
+                if (newSlide.length == 0)
+                    newSlide = slides.filter('.slide').first();
+            }
+
+            slideshowSwitch(slideshow, newSlide.index(), auto);
+        }
+
+        function homeSlideshowParallax() {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > windowHeight) return;
+            var inner = slideshow.find('.slideshow-inner');
+            var newHeight = windowHeight - (scrollTop / 2);
+            var newTop = scrollTop * 0.8;
+
+            inner.css({
+                transform: 'translateY(' + newTop + 'px)',
+                height: newHeight
+            });
+        }
+
+        $(document).ready(function() {
+            $('.slide').addClass('is-loaded');
+
+            $('.slideshow .arrows .arrow').on('click', function() {
+                slideshowNext($(this).closest('.slideshow'), $(this).hasClass('prev'));
+            });
+            $('.navigation-bg .arrows .arrow').on('click', function() {
+                slideshowNext($(this).closest('.slideshow'), $(this).hasClass('prev'));
+            });
+            $('.slideshow .pagination .item').on('click', function() {
+                slideshowSwitch($(this).closest('.slideshow'), $(this).index());
+            });
+
+            $('.slideshow .pagination').on('check', function() {
+                var slideshow = $(this).closest('.slideshow');
+                var pages = $(this).find('.item');
+                var index = slideshow.find('.slides .is-active').index();
+                pages.removeClass('is-active');
+                pages.eq(index).addClass('is-active');
+            });
+
+            /* Lazyloading
+            $('.slideshow').each(function(){
+              var slideshow=$(this);
+              var images=slideshow.find('.image').not('.is-loaded');
+              images.on('loaded',function(){
+                var image=$(this);
+                var slide=image.closest('.slide');
+                slide.addClass('is-loaded');
+              });
+            */
+
+            var timeout = setTimeout(function() {
+                slideshowNext(slideshow, false, true);
+            }, slideshowDuration);
+
+            slideshow.data('timeout', timeout);
+        });
+
+        if ($('.main-content .slideshow').length > 1) {
+            $(window).on('scroll', homeSlideshowParallax);
+        }
     </script>
 </body>
 
