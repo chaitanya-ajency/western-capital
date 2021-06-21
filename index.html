@@ -29,16 +29,16 @@
             <div class="collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
                 <ul class="navbar-nav text-capitalize mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a aria-current="page" class="nav-link" href="https://chaitanya-ajency.github.io/western-capital">Home</a>
+                        <a aria-current="page" class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">about us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">services</a>
+                        <a class="nav-link active" href="#">services</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a aria-expanded="false" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdown" role="button">company</a>
+                        <a aria-expanded="false" class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdown" role="button">company</a>
                         <ul aria-labelledby="navbarDropdown" class="dropdown-menu px-2">
                             <li class="border-bottom pb-2 pe-md-5">
                                 <a class="dropdown-item" href="#">our advisors</a>
@@ -594,7 +594,7 @@
                 Benefits of Partnering with us
             </h3>
         </div>
-        <div class="second-col bg-grey">
+        <div class="second-col bg-grey text-center text-md-start">
             <div class="container">
                 <div class="row icon-text justify-content-md-evenly">
                     <div class="col-md-3" data-aos="fade-up" data-aos-duration="1000">
@@ -1300,6 +1300,35 @@
             $(window).on('scroll', homeSlideshowParallax);
         }
     </script>
+    <script>
+        // $(document).ready(function() {
+        //     $(".dropdown-toggle").mouseover(function() {
+        //         $(".dropdown-menu").show();
+        //     });
+        //     $(".dropdown-toggle").mouseout(function() {
+        //         $(".dropdown-menu").hide();
+        //     });
+        // });
+        // $(".dropdown-toggle").mouseover(function() {
+        //     $('.dropdown-menu').show();
+        //     console.log('show')
+        // });
+
+        // $(document).mouseout(function(e) {
+        //     if ($(e.target).closest(".dropdown-menu").length === 0) {
+        //         $(".dropdown-menu").hide();
+        //         console.log('hide')
+        //     }
+        // });
+    </script>
+    <!-- <script>
+        $(".dropdown-toggle").mouseover(function(e) {
+            var container = $(".dropdown-menu");
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                container.show();
+            }
+        });
+    </script> -->
 </body>
 
 </html>
