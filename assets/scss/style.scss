@@ -217,13 +217,12 @@ section {
         }
     }
 }
-.show-dropdown{
-   @media screen and (min-width: 768px) {
-            top: 130%;
-    left: -68px;
-   }
-   
-   
+.show-dropdown {
+    @media screen and (min-width: 768px) {
+        top: 130%;
+        left: -68px;
+    }
+
     display: block;
 }
 .scrolltop {
@@ -1186,6 +1185,10 @@ footer {
     .slick-dots {
         bottom: -100px;
     }
+    img{
+        height: 421px;
+        object-fit: cover;
+    }
 }
 .tab-pane {
     transform: translateX(100px);
@@ -1223,9 +1226,9 @@ footer {
             width: 30%;
             margin: 10px;
         }
-      &:last-child{
-          margin-bottom: 0;
-      }
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     @media screen and (min-width: 992px) {
         padding-top: 100px;
@@ -1377,7 +1380,7 @@ footer {
     padding-top: 0;
     position: relative;
 
-        padding-bottom: 0;
+    padding-bottom: 0;
     .first-col {
         padding: 15px;
         color: #fff;
@@ -1440,20 +1443,18 @@ footer {
 
 //////////////////// Partners
 .our-partner {
-   @media screen and (min-width: 992px) {
+    @media screen and (min-width: 992px) {
         padding: 50px 0;
-   }
-   
-   
+    }
+
     position: relative;
     z-index: 9;
     overflow-x: hidden;
     .multiple-items {
-       @media screen and (min-width: 992px) {
+        @media screen and (min-width: 992px) {
             margin-top: 45px;
-       }
-       
-       
+        }
+
         .brands {
             height: 120px;
             display: flex !important;
@@ -1484,13 +1485,12 @@ footer {
     }
     .testimonial-body {
         border: 1px solid #dddddd;
-            padding: 30px 1px 40px;
+        padding: 30px 1px 40px;
 
         @media screen and (min-width: 992px) {
             padding: 30px 40px 40px;
         }
-        
-        
+
         position: relative;
         &::after {
             content: url(../images/quote.png);
@@ -1619,11 +1619,10 @@ footer {
 }
 
 .number-container {
-   @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         padding-top: 30px;
-   }
-   
-   
+    }
+
     .title {
         padding-bottom: 30px;
     }
