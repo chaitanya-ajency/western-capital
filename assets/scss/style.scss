@@ -1204,7 +1204,6 @@ footer {
     }
 } /* bootstrap hack end */
 .services {
-    padding-bottom: 30px;
     background-image: url(../images/Subtract.png);
     .image-item {
         width: 100%;
@@ -1214,6 +1213,9 @@ footer {
             width: 30%;
             margin: 10px;
         }
+      &:last-child{
+          margin-bottom: 0;
+      }
     }
     @media screen and (min-width: 992px) {
         padding-top: 100px;
@@ -1362,8 +1364,10 @@ footer {
 
 /////////////////benefits
 .benefits {
+    padding-top: 0;
     position: relative;
 
+        padding-bottom: 0;
     .first-col {
         padding: 15px;
         color: #fff;
@@ -1393,7 +1397,6 @@ footer {
     .icon-text {
         padding-top: 30px;
         padding-left: 15px;
-        padding-bottom: 30px;
         @media screen and (min-width: 992px) {
             padding-top: 100px;
             padding-left: 48px;
@@ -1427,12 +1430,20 @@ footer {
 
 //////////////////// Partners
 .our-partner {
-    padding: 50px 0;
+   @media screen and (min-width: 992px) {
+        padding: 50px 0;
+   }
+   
+   
     position: relative;
     z-index: 9;
     overflow-x: hidden;
     .multiple-items {
-        margin-top: 45px;
+       @media screen and (min-width: 992px) {
+            margin-top: 45px;
+       }
+       
+       
         .brands {
             height: 120px;
             display: flex !important;
@@ -1464,7 +1475,13 @@ footer {
     }
     .testimonial-body {
         border: 1px solid #dddddd;
-        padding: 30px 40px 40px;
+            padding: 30px 1px 40px;
+
+        @media screen and (min-width: 992px) {
+            padding: 30px 40px 40px;
+        }
+        
+        
         position: relative;
         &::after {
             content: url(../images/quote.png);
@@ -1593,7 +1610,11 @@ footer {
 }
 
 .number-container {
-    padding-top: 30px;
+   @media screen and (min-width: 768px) {
+        padding-top: 30px;
+   }
+   
+   
     .title {
         padding-bottom: 30px;
     }
