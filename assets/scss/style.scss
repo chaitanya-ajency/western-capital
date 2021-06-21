@@ -169,7 +169,7 @@ section {
         &::after {
             content: "";
             position: absolute;
-            top: -6px;
+            top: -5px;
             right: 30px;
             height: 10px;
             width: 10px;
@@ -217,7 +217,15 @@ section {
         }
     }
 }
-
+.show-dropdown{
+   @media screen and (min-width: 768px) {
+            top: 130%;
+    left: -68px;
+   }
+   
+   
+    display: block;
+}
 .scrolltop {
     display: block;
 }

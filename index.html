@@ -1343,12 +1343,12 @@
 
 
             $(".dropdown-toggle").mouseenter(function() {
-                $('.dropdown-menu').show();
+                $('.dropdown-menu').addClass("show-dropdown");
             });
             $(".dropdown-menu").mouseleave(function(e) {
                 var value = $(".dropdown-menu").length;
                 if ($(e.target).closest(".dropdown-menu").length === 1) {
-                    $('.dropdown-menu').hide();
+                    $('.dropdown-menu').removeClass("show-dropdown");
 
                 }
             });
