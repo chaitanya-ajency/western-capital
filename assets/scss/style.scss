@@ -164,6 +164,8 @@ section {
         }
     }
     .dropdown-menu {
+        width: 200px;
+        max-width: 200px;
         &::after {
             content: "";
             position: absolute;
@@ -1458,7 +1460,6 @@ footer {
         }
     }
 }
-
 //////////////////////////
 .testimonial-section {
     overflow: hidden;
