@@ -1338,14 +1338,22 @@
         //     }
         // });
     </script>
-    <!-- <script>
-        $(".dropdown-toggle").mouseover(function(e) {
-            var container = $(".dropdown-menu");
-            if (!container.is(e.target) && container.has(e.target).length === 0) {
-                container.show();
-            }
+    <script>
+        $(document).ready(function() {
+
+
+            $(".dropdown-toggle").mouseenter(function() {
+                $('.dropdown-menu').show();
+            });
+            $(".dropdown-menu").mouseleave(function(e) {
+                var value = $(".dropdown-menu").length;
+                if ($(e.target).closest(".dropdown-menu").length === 1) {
+                    $('.dropdown-menu').hide();
+
+                }
+            });
         });
-    </script> -->
+    </script>
 </body>
 
 </html>
