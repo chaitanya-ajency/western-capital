@@ -2570,11 +2570,28 @@ img.contact-page-bg-pattern {
     background-repeat: no-repeat;
 }
 ///////////////////////////@at-root
+  @media screen and (max-width: 992px) {
+        .position-sm-sticky {
+            position: sticky;
+            top: 0;
+            padding: 0;
+            background-color: #fff;
+            padding: 0 5px;
+        }
+    }
 .section-links {
     position: sticky;
     top: 120px;
     padding: 0;
     margin-top: 15px;
+  
+@media screen and (max-width: 992px) {
+    
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+}
+
 
     @media screen and (min-width: 992px) {
         margin-top: 120px;
@@ -2590,19 +2607,25 @@ img.contact-page-bg-pattern {
 
             letter-spacing: 0.15em;
         }
-        a{
+        a {
             color: #000;
             text-decoration: none;
-            &:hover,&.active{
+            &:hover,
+            &.active {
                 color: orange;
                 text-decoration: underline;
             }
-           
         }
     }
 }
-.text-section{
-    .subtitle{
+.text-section {
+    .subtitle {
         font-size: 30px;
+    }
+}
+.ht-md{
+    height: 36px;
+    @media screen and (min-width: 992px) {
+        height:90px;
     }
 }
