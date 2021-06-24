@@ -55,7 +55,7 @@
             </div>
         </div>
     </nav>
-    <section class="banner position-relative">
+    <section class="banner position-relative pt-0">
         <img src="assets/images/about-banner.jpg" alt="" class="d-block w-100">
         <div class="container">
             <div class="banner-text">
@@ -515,6 +515,16 @@
 
                 }
             })
+        });
+    </script>
+      <script>
+        $(document).ready(function() {
+            $(".navbar-toggler").click(function() {
+                $('.navbar').toggleClass("bg-white");
+                $('.scrolltop').toggleClass("d-none");
+                $('.scrolldown').toggleClass("d-block");
+                $('.fa-bars').toggleClass("text-dark");
+            });
         });
     </script>
 </body>

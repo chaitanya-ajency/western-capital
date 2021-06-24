@@ -12,7 +12,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/scss/style.css" rel="stylesheet" />
 
     <title>Wester Capital</title>
 </head>
@@ -35,10 +35,10 @@
                         <a class="nav-link" href="https://chaitanya-ajency.github.io/western-capital/aboutus">about us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">services</a>
+                        <a class="nav-link active" href="#services">services</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a aria-expanded="false" class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdown" role="button">company</a>
+                        <a aria-expanded="false" class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdown" role="button" disabled>company</a>
                         <ul aria-labelledby="navbarDropdown" class="dropdown-menu px-2">
                             <li class="border-bottom pb-2">
                                 <a class="dropdown-item" href="#">our advisors</a>
@@ -111,7 +111,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pagination d-lg-none">
+                <div class="pagination d-none">
                     <div class="item is-active">
                         <span class="icon">1</span>
                     </div>
@@ -127,7 +127,7 @@
                 </div>
 
             </div>
-            <div class="navigation-bg d-none d-lg-block">
+            <div class="navigation-bg">
                 <img alt="diamond-pattrn" class="img-fluid w-100" src="assets/images/nav-image.png">
 
                 <div class="arrows">
@@ -454,7 +454,7 @@
 
     <!-- ============ End ============= -->
     <!-- ============ our services ============= -->
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="d-flex flex-wrap services-container">
                 <div class="text">
@@ -472,14 +472,14 @@
                             <div class="item-caption">
                                 <h2 class="description">Supply Chain Finance</h2>
                             </div>
-                            <div class="desc d-md-none">
+                            <!-- <div class="desc d-md-none">
                                 Supply Chain Finance solutions to the vendors of our partners for better utilization of the working capital. Also, this will create stickiness in the relationship between Vendor and Partner.
-                            </div>
+                            </div> -->
                         </div>
 
 
 
-                        <div class="item-text d-none d-md-block">
+                        <div class="item-text ">
                             <img src="assets/images/image1.png" class="w-100" alt="">
                             <div class="description2">
                                 <div class="desc-title">
@@ -500,12 +500,12 @@
                             <div class="item-caption">
                                 <h2 class="description">Growth Capital</h2>
                             </div>
-                            <div class="desc d-md-none">
+                            <!-- <div class="desc d-md-none">
                                 Term Loans to NBFC/Fintech/MFI to grow the business on their book.
-                            </div>
+                            </div> -->
                         </div>
 
-                        <div class="item-text d-none d-md-block">
+                        <div class="item-text ">
                             <img src="assets/images/image2.png" class="w-100" alt="">
 
                             <div class="description2">
@@ -526,12 +526,12 @@
                             <div class="item-caption">
                                 <h2 class="description">Structured Finance</h2>
                             </div>
-                            <div class="desc d-md-none">
+                            <!-- <div class="desc d-md-none">
                                 We have successfully offered working capital solutions to some of the unicorns. All of our offers are unique and tailor made to the requirement of our customers. Please approach us with your requirements. We guarantee you with a solutions.
-                            </div>
+                            </div> -->
                         </div>
 
-                        <div class="item-text d-none d-md-block">
+                        <div class="item-text ">
                             <img src="assets/images/image3.png" class="w-100" alt="">
                             <div class="description2">
                                 <div class="desc-title">
@@ -552,13 +552,13 @@
                             <div class="item-caption">
                                 <h2 class="description">Partnership Model</h2>
                             </div>
-                            <div class="desc d-md-none">
+                            <!-- <div class="desc d-md-none">
                                 Offer solutions to utilize the capacity (technology, manpower, operations &amp; market intelligence). It’s a win-win proposition with both the parties where partners can have better productivity and can get additional revenue through optimizing the resources
                                 in a better and profitable way.
-                            </div>
+                            </div> -->
                         </div>
 
-                        <div class="item-text d-none d-md-block">
+                        <div class="item-text ">
                             <img src="assets/images/image4.png" class="w-100" alt="">
                             <div class="description2">
                                 <div class="desc-title">
@@ -580,12 +580,12 @@
                             <div class="item-caption">
                                 <h2 class="description">Venture Debt</h2>
                             </div>
-                            <div class="desc d-md-none">
+                            <!-- <div class="desc d-md-none">
                                 Offer Hassle Free Venture Debt to new age companies who are looking at Debt before their Series C/ Series D Funding.
-                            </div>
+                            </div> -->
                         </div>
 
-                        <div class="item-text d-none d-md-block">
+                        <div class="item-text ">
                             <img src="assets/images/image4.png" class="w-100" alt="">
                             <div class="description2">
                                 <div class="desc-title">
@@ -900,8 +900,10 @@
             <div class="footer-brand">
                 <a href="https://chaitanya-ajency.github.io/western-capital/"><img alt="logo" src="assets/images/LOGO1.png" class="footer-logo"></a>
             </div>
-            <div class="row">
-                <div class="col-6 col-md-4">
+            <div class="vertical-line"></div>
+
+            <div class="row pt-10">
+                <div class="col-12 col-md-4 col-left">
                     <ul class="text-md-start">
                         <li>
                             <a href="https://chaitanya-ajency.github.io/western-capital/aboutus">About us</a>
@@ -914,7 +916,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-4">
+                <div class="col-12 col-md-4 col-mid">
                     <ul class="social-login">
                         <li>
                             <a href="#">
@@ -934,7 +936,7 @@
                     </ul>
                 </div>
 
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 col-right">
                     <ul class="text-md-end">
                         <li>
                             <a href="#">regulatory</a>
@@ -949,7 +951,6 @@
                 </div>
             </div>
             <img src="assets/images/footer_pattern.png" class="footer-pattern" alt="">
-            <div class="vertical-line"></div>
         </div>
         <div class="copyright-footer">
             <div class="container">
@@ -1351,6 +1352,24 @@
                     $('.dropdown-menu').removeClass("show-dropdown");
 
                 }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".navbar-toggler").click(function() {
+                $('.navbar').toggleClass("bg-white");
+                $('.scrolltop').toggleClass("d-none");
+                $('.scrolldown').toggleClass("d-block");
+                $('.fa-bars').toggleClass("text-dark");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(function() {
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
             });
         });
     </script>
