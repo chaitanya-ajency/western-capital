@@ -201,6 +201,7 @@
     </footer>
 
 
+
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
@@ -210,19 +211,21 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/1.1.6/waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $(".navbar-toggler").click(function() {
-                $('.navbar').toggleClass("bg-white");
-                $('.scrolltop').toggleClass("d-none");
-                $('.scrolldown').toggleClass("d-block");
-                $('.fa-bars').toggleClass("text-dark");
-            });
-        });
-    </script>
     <script>
         AOS.init();
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll > 50) {
+                    $(".navbar").addClass('scrolled-down').addClass('header-shadow').removeClass('scrolled-top');
+
+                };
+                if (scroll < 50) {
+                    $(".navbar").addClass('scrolled-top').removeClass('header-shadow');
+
+                }
+            })
+        });
     </script>
 </body>
 

@@ -428,16 +428,18 @@
     </section>
 
     <!-- ============ End ============= -->
-    <footer class="position-relative">
+        <footer class="position-relative">
         <div class="container">
             <div class="footer-brand">
                 <a href="https://chaitanya-ajency.github.io/western-capital/"><img alt="logo" src="assets/images/LOGO1.png" class="footer-logo"></a>
             </div>
-            <div class="row">
-                <div class="col-6 col-md-4">
+            <div class="vertical-line"></div>
+
+            <div class="row pt-10">
+                <div class="col-12 col-md-4 col-left">
                     <ul class="text-md-start">
                         <li>
-                            <a href="#">About us</a>
+                            <a href="https://chaitanya-ajency.github.io/western-capital/aboutus">About us</a>
                         </li>
                         <li>
                             <a href="#">Advisor</a>
@@ -447,7 +449,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-4">
+                <div class="col-12 col-md-4 col-mid">
                     <ul class="social-login">
                         <li>
                             <a href="#">
@@ -467,7 +469,7 @@
                     </ul>
                 </div>
 
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 col-right">
                     <ul class="text-md-end">
                         <li>
                             <a href="#">regulatory</a>
@@ -482,7 +484,6 @@
                 </div>
             </div>
             <img src="assets/images/footer_pattern.png" class="footer-pattern" alt="">
-            <div class="vertical-line"></div>
         </div>
         <div class="copyright-footer">
             <div class="container">
@@ -499,34 +500,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js" integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/1.1.6/waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                var scroll = $(window).scrollTop();
-                if (scroll > 50) {
-                    $(".navbar").addClass('scrolled-down').removeClass('scrolled-top');
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/custom.js"></script>
 
-                };
-                if (scroll < 50) {
-                    $(".navbar").addClass('scrolled-top').removeClass('scrolled-down');
-
-                }
-            })
-        });
-    </script>
-      <script>
-        $(document).ready(function() {
-            $(".navbar-toggler").click(function() {
-                $('.navbar').toggleClass("bg-white");
-                $('.scrolltop').toggleClass("d-none");
-                $('.scrolldown').toggleClass("d-block");
-                $('.fa-bars').toggleClass("text-dark");
-            });
-        });
-    </script>
 </body>
 
 </html>

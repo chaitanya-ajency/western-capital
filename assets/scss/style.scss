@@ -9,6 +9,9 @@ body {
 section {
     padding: 15px 0;
 }
+.header-shadow {
+    box-shadow: 0 10px 10px -11px #000;
+}
 .title {
     z-index: 2;
     font-weight: bold;
@@ -271,7 +274,6 @@ section {
         position: sticky;
         top: 0;
         width: 100%;
-        box-shadow: 0 10px 10px -11px #000;
         .nav-item {
             .nav-link {
                 color: $theme-color;
@@ -1893,7 +1895,8 @@ footer {
             }
         }
 
-        a,.link {
+        a,
+        .link {
             transition: all 0.2s ease-in-out;
             margin-top: 5px;
             display: block;
@@ -1905,8 +1908,8 @@ footer {
             line-height: 32px;
             text-decoration: none;
         }
-        a{
-               &:hover {
+        a {
+            &:hover {
                 color: #0000b8;
                 transition: all 0.2s ease-in-out;
                 text-decoration: underline;
@@ -2056,7 +2059,7 @@ img.contact-page-bg-pattern {
 ///////////////////////////////////
 .banner {
     @media screen and (max-width: 768px) {
-        height: 100vh;
+        height: 70vh;
 
         img {
             height: 100%;
@@ -2355,7 +2358,7 @@ img.contact-page-bg-pattern {
 
     .banner-text {
         position: absolute;
-        bottom: 0;
+        bottom: 15%;
         .title {
             color: #fff;
             font-size: 2.6em;
@@ -2446,6 +2449,7 @@ img.contact-page-bg-pattern {
 }
 ////////////////////@at-root
 .meet-our-team {
+    overflow: hidden;
     @media screen and (min-width: 992px) {
         padding: 20px 0 100px;
     }

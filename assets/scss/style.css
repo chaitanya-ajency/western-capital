@@ -7,6 +7,10 @@ section {
   padding: 15px 0;
 }
 
+.header-shadow {
+  box-shadow: 0 10px 10px -11px #000;
+}
+
 .title {
   z-index: 2;
   font-weight: bold;
@@ -289,7 +293,6 @@ section {
     position: sticky;
     top: 0;
     width: 100%;
-    box-shadow: 0 10px 10px -11px #000;
   }
   .scrolled-down .nav-item .nav-link {
     color: #02478c;
@@ -1854,7 +1857,8 @@ footer .copyright-footer .container img {
     letter-spacing: 0.15em;
   }
 }
-.contact-us .icon-text a, .contact-us .icon-text .link {
+.contact-us .icon-text a,
+.contact-us .icon-text .link {
   transition: all 0.2s ease-in-out;
   margin-top: 5px;
   display: block;
@@ -1864,7 +1868,8 @@ footer .copyright-footer .container img {
   text-decoration: none;
 }
 @media screen and (min-width: 992px) {
-  .contact-us .icon-text a, .contact-us .icon-text .link {
+  .contact-us .icon-text a,
+.contact-us .icon-text .link {
     font-size: 22px;
   }
 }
@@ -1996,7 +2001,7 @@ img.contact-page-bg-pattern {
 }
 @media screen and (max-width: 768px) {
   .banner {
-    height: 100vh;
+    height: 70vh;
   }
   .banner img {
     height: 100%;
@@ -2291,7 +2296,7 @@ img.contact-page-bg-pattern {
 }
 .geographical-map .banner-text {
   position: absolute;
-  bottom: 0;
+  bottom: 15%;
 }
 .geographical-map .banner-text .title {
   color: #fff;
@@ -2387,6 +2392,9 @@ img.contact-page-bg-pattern {
   }
 }
 
+.meet-our-team {
+  overflow: hidden;
+}
 @media screen and (min-width: 992px) {
   .meet-our-team {
     padding: 20px 0 100px;

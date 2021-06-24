@@ -93,9 +93,7 @@
                                 <strong>visit us at</strong>
                             </div>
                         </div>
-                        <p class="link">Western Coperate Park
-                            Tower A Complex
-                            Bengaluru, Karnataka, India</p>
+                        <p class="link">Western Coperate Park Tower A Complex Bengaluru, Karnataka, India</p>
                     </div>
                     <a href="#" class="get-direction">get directions</a>
                     <img src="assets/images/direction-arrow.png" alt="" class="direction-arrow">
@@ -149,11 +147,13 @@
             <div class="footer-brand">
                 <a href="https://chaitanya-ajency.github.io/western-capital/"><img alt="logo" src="assets/images/LOGO1.png" class="footer-logo"></a>
             </div>
-            <div class="row">
-                <div class="col-6 col-md-4">
+            <div class="vertical-line"></div>
+
+            <div class="row pt-10">
+                <div class="col-12 col-md-4 col-left">
                     <ul class="text-md-start">
                         <li>
-                            <a href="#">About us</a>
+                            <a href="https://chaitanya-ajency.github.io/western-capital/aboutus">About us</a>
                         </li>
                         <li>
                             <a href="#">Advisor</a>
@@ -163,7 +163,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-4">
+                <div class="col-12 col-md-4 col-mid">
                     <ul class="social-login">
                         <li>
                             <a href="#">
@@ -183,7 +183,7 @@
                     </ul>
                 </div>
 
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 col-right">
                     <ul class="text-md-end">
                         <li>
                             <a href="#">regulatory</a>
@@ -198,7 +198,6 @@
                 </div>
             </div>
             <img src="assets/images/footer_pattern.png" class="footer-pattern" alt="">
-            <div class="vertical-line"></div>
         </div>
         <div class="copyright-footer">
             <div class="container">
@@ -207,6 +206,7 @@
             </div>
         </div>
     </footer>
+
 
 
     <script src="assets/js/bootstrap.min.js"></script>
@@ -220,6 +220,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <script>
         AOS.init();
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll > 50) {
+                    $(".navbar").addClass('scrolled-down').addClass('header-shadow').removeClass('scrolled-top');
+
+                };
+                if (scroll < 50) {
+                    $(".navbar").addClass('scrolled-top').removeClass('header-shadow');
+
+                }
+            })
+        });
     </script>
 </body>
 
