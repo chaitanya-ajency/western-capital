@@ -976,7 +976,12 @@ footer {
         }
     }
     .social-login {
-        width: 75%;
+         width: 50%;
+       @media screen and (min-width: 992px) {
+            width: 75%;
+       }
+       
+       
         margin: auto;
         padding-left: 0;
         display: flex;

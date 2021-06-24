@@ -917,11 +917,16 @@ footer ul li a:hover {
   color: #aeadad;
 }
 footer .social-login {
-  width: 75%;
+  width: 50%;
   margin: auto;
   padding-left: 0;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (min-width: 992px) {
+  footer .social-login {
+    width: 75%;
+  }
 }
 footer .social-login img {
   width: 20px;
