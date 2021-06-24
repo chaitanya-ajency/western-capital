@@ -2521,4 +2521,40 @@ img.contact-page-bg-pattern {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.section-links {
+  position: sticky;
+  top: 120px;
+  padding: 0;
+  margin-top: 15px;
+}
+@media screen and (min-width: 992px) {
+  .section-links {
+    margin-top: 120px;
+  }
+}
+.section-links li {
+  text-transform: uppercase;
+  font-weight: bold;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 992px) {
+  .section-links li {
+    font-size: 20px;
+    letter-spacing: 0.15em;
+  }
+}
+.section-links li a {
+  color: #000;
+  text-decoration: none;
+}
+.section-links li a:hover, .section-links li a.active {
+  color: orange;
+  text-decoration: underline;
+}
+
+.text-section .subtitle {
+  font-size: 30px;
+}
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
