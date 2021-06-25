@@ -102,6 +102,17 @@ section {
   font-size: 2em;
 }
 
+.navbar-toggler {
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  margin-right: 30px;
+}
+
+.filter-invert {
+  filter: invert(1);
+}
+
 .navbar {
   width: 100%;
   z-index: 99;

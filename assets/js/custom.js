@@ -8,7 +8,7 @@
 
                 };
                 if (scroll < 50) {
-                    $(".navbar").addClass('scrolled-top').removeClass('scrolled-down');
+                    $(".navbar").addClass('scrolled-top').removeClass('scrolled-down').removeClass('header-shadow');
 
                 }
             })
@@ -147,6 +147,8 @@
                 $('.scrolltop').toggleClass("d-none");
                 $('.scrolldown').toggleClass("d-block");
                 $('.fa-bars').toggleClass("text-dark");
+                $('.navbar-toggler').toggleClass("filter-invert");
+
             });
         });
    
