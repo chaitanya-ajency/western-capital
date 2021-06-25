@@ -148,7 +148,6 @@
                 $('.scrolldown').toggleClass("d-block");
                 $('.fa-bars').toggleClass("text-dark");
                 $('.navbar-toggler').toggleClass("filter-invert");
-
             });
         });
    

@@ -2495,9 +2495,6 @@ img.contact-page-bg-pattern {
   }
 }
 
-.advisor-banner {
-  margin-top: -50px;
-}
 @media screen and (max-width: 992px) {
   .advisor-banner {
     height: 50vh;
@@ -2506,6 +2503,11 @@ img.contact-page-bg-pattern {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+@media screen and (min-width: 992px) {
+  .advisor-banner {
+    margin-top: -55px;
   }
 }
 
@@ -2517,6 +2519,7 @@ img.contact-page-bg-pattern {
 }
 @media screen and (max-width: 992px) {
   .Promoters-banner {
+    padding-top: 65px !important;
     height: 50vh;
   }
   .Promoters-banner img {
@@ -2531,11 +2534,23 @@ img.contact-page-bg-pattern {
   margin-bottom: 30px;
 }
 
-.bg-full-height {
-  background-image: url(../images/left-bg-full-height.png);
-  background-position: left;
-  background-size: contain;
-  background-repeat: no-repeat;
+@media screen and (min-width: 768px) {
+  .bg-full-height {
+    background-image: url(../images/left-bg-full-height.png);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 992px) {
+  .regulatory .regulatory-banner {
+    height: 40vh;
+  }
+  .regulatory .regulatory-banner img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 @media screen and (max-width: 992px) {
