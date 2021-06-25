@@ -1031,8 +1031,6 @@ footer {
         @media screen and (min-width: 992px) {
             width: 30%;
         }
-        
-        
     }
     .copyright-footer {
         background: #04386c;
@@ -1134,7 +1132,7 @@ footer {
         left: 0;
         width: 100%;
         height: 100%;
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 992px) {
             background-image: url(../images/tabsleft.png);
         }
 
@@ -1152,7 +1150,7 @@ footer {
         width: 100%;
         height: 100%;
         bottom: 0;
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 992px) {
             background-image: url(../images/tabsright.png);
         }
 
@@ -1243,7 +1241,7 @@ footer {
             margin: auto;
         }
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 992px) {
         .slick-track {
             .slick-slide {
                 &:nth-child(even) {
@@ -1281,12 +1279,16 @@ footer {
         .team-mem {
             font-size: 22px;
         }
-        &:hover {
-            .team-text {
-                opacity: 1;
-                transform: translateY(0);
+        padding: 5px;
+        @media screen and (min-width: 992px) {
+            padding: 0;
+            &:hover {
+                .team-text {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                z-index: 99;
             }
-            z-index: 99;
         }
     }
     .team-text {
@@ -1294,7 +1296,8 @@ footer {
         font-weight: bold;
         text-align: center;
     }
-    .team-text {
+   @media screen and (min-width: 992px) {
+        .team-text {
         font-size: 14px;
         transition: all 0.2s ease-in-out;
         opacity: 0;
@@ -1311,11 +1314,23 @@ footer {
         transform: translateY(100%);
         z-index: 20;
     }
+   }
+   
+   
 }
 .meet-team {
-    .slick-dots {
+    @media screen and (min-width: 768px) {
+        .slick-dots {
+        bottom: -70px;
+    }
+   }
+   @media screen and (min-width: 992px) {
+        .slick-dots {
         bottom: -100px;
     }
+   }
+   
+   
     img {
         height: 421px;
         object-fit: cover;

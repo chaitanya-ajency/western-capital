@@ -1096,7 +1096,7 @@ footer .copyright-footer .container img {
   z-index: -1;
   width: 240px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .tabs-section::before {
     background-image: url(../images/tabsleft.png);
   }
@@ -1114,7 +1114,7 @@ footer .copyright-footer .container img {
   width: 170px;
   z-index: -1;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .tabs-section::after {
     background-image: url(../images/tabsright.png);
   }
@@ -1202,7 +1202,7 @@ footer .copyright-footer .container img {
     margin: auto;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .tabs-section .slick-track .slick-slide:nth-child(even) {
     margin-top: 45px;
   }
@@ -1231,42 +1231,57 @@ footer .copyright-footer .container img {
 .tabs-section .team {
   position: relative;
   overflow: hidden;
+  padding: 5px;
 }
 .tabs-section .team .team-mem {
   font-size: 22px;
 }
-.tabs-section .team:hover {
-  z-index: 99;
-}
-.tabs-section .team:hover .team-text {
-  opacity: 1;
-  transform: translateY(0);
+@media screen and (min-width: 992px) {
+  .tabs-section .team {
+    padding: 0;
+  }
+  .tabs-section .team:hover {
+    z-index: 99;
+  }
+  .tabs-section .team:hover .team-text {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .tabs-section .team-text {
   padding-top: 8px;
   font-weight: bold;
   text-align: center;
 }
-.tabs-section .team-text {
-  font-size: 14px;
-  transition: all 0.2s ease-in-out;
-  opacity: 0;
-  padding: 30px;
-  width: 90%;
-  height: 90%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  background-color: white;
-  transform: translateY(100%);
-  z-index: 20;
+@media screen and (min-width: 992px) {
+  .tabs-section .team-text {
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    padding: 30px;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: white;
+    transform: translateY(100%);
+    z-index: 20;
+  }
 }
 
-.meet-team .slick-dots {
-  bottom: -100px;
+@media screen and (min-width: 768px) {
+  .meet-team .slick-dots {
+    bottom: -70px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .meet-team .slick-dots {
+    bottom: -100px;
+  }
 }
 .meet-team img {
   height: 421px;
