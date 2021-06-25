@@ -2,6 +2,7 @@ $theme-color: #02478c;
 $color-blue: #298cf0;
 $color-blue-dark: #243a5a;
 $color-grey: #8894a6;
+$text-orange: #ee6c4d;
 @import url(../font/segoe-ui-4-cufonfonts/SegoeUI.ttf);
 body {
     font-family: "Segoe UI";
@@ -38,6 +39,9 @@ section {
         margin-right: auto;
         margin-left: unset !important;
     }
+}
+.description-1{
+    font-size: 22px;
 }
 .description {
     font-size: 1.375em;
@@ -1296,41 +1300,38 @@ footer {
         font-weight: bold;
         text-align: center;
     }
-   @media screen and (min-width: 992px) {
+    @media screen and (min-width: 992px) {
         .team-text {
-        font-size: 14px;
-        transition: all 0.2s ease-in-out;
-        opacity: 0;
-        padding: 30px;
-        width: 90%;
-        height: 90%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        background-color: white;
-        transform: translateY(100%);
-        z-index: 20;
+            font-size: 14px;
+            transition: all 0.2s ease-in-out;
+            opacity: 0;
+            padding: 30px;
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: white;
+            transform: translateY(100%);
+            z-index: 20;
+        }
     }
-   }
-   
-   
 }
 .meet-team {
     @media screen and (min-width: 768px) {
         .slick-dots {
-        bottom: -70px;
+            bottom: -70px;
+        }
     }
-   }
-   @media screen and (min-width: 992px) {
+    @media screen and (min-width: 992px) {
         .slick-dots {
-        bottom: -100px;
+            bottom: -100px;
+        }
     }
-   }
-   
-   
+
     img {
         height: 421px;
         object-fit: cover;
@@ -2025,7 +2026,7 @@ footer {
         background: #fff;
         margin: 0 0 5px;
         padding: 10px;
-        height: 100px;
+        height: 200px;
         max-width: 100%;
         resize: none;
         &:hover {
@@ -2191,7 +2192,7 @@ img.contact-page-bg-pattern {
     padding-top: 15px;
 
     @media screen and (min-width: 992px) {
-        padding-top: 30px;
+        padding-top: 50px;
     }
 
     .timeline {
@@ -2478,7 +2479,7 @@ img.contact-page-bg-pattern {
 /////////////////////////////////////
 .about-founder {
     @media screen and (min-width: 992px) {
-        padding: 50px 0;
+        padding: 50px 0 0;
     }
 
     .float-left {
@@ -2520,6 +2521,16 @@ img.contact-page-bg-pattern {
         position: static;
         justify-content: space-between;
     }
+@media screen and (max-width: 767px) {
+        .carousel-control-next, .carousel-control-prev {
+    align-items: flex-start;
+    padding-top: 70px;
+}
+}
+
+
+
+
 }
 .meet-our-team hr {
     width: 100px;
@@ -2614,6 +2625,15 @@ img.contact-page-bg-pattern {
         }
     }
 }
+.promoter-container {
+    .row {
+        border-bottom: 3px solid #02478c;
+        margin-bottom: 10px;
+        &:last-child{
+        border-bottom: 0;
+        }
+    }
+}
 @media screen and (min-width: 768px) {
     .bg-full-height {
         background-image: url(../images/left-bg-full-height.png);
@@ -2642,6 +2662,7 @@ img.contact-page-bg-pattern {
         padding: 0;
         background-color: #fff;
         padding: 0 5px;
+        z-index: 5;
     }
 }
 .section-links {
@@ -2675,7 +2696,7 @@ img.contact-page-bg-pattern {
             text-decoration: none;
             &:hover,
             &.active {
-                color: orange;
+                color: $text-orange;
                 text-decoration: underline;
             }
         }
@@ -2688,7 +2709,24 @@ img.contact-page-bg-pattern {
 }
 .ht-md {
     height: 36px;
+    position: relative;
     @media screen and (min-width: 992px) {
         height: 90px;
+        position: relative;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        height: 1.5px;
+        background-color: #d7d7d7;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    &:first-child {
+        &::after {
+            display: none;
+        }
     }
 }

@@ -45,6 +45,10 @@ section {
     margin-left: unset !important;
   }
 }
+.description-1 {
+  font-size: 22px;
+}
+
 .description {
   font-size: 1.375em;
   line-height: 32px;
@@ -1990,7 +1994,7 @@ footer .copyright-footer .container img {
   background: #fff;
   margin: 0 0 5px;
   padding: 10px;
-  height: 100px;
+  height: 200px;
   max-width: 100%;
   resize: none;
 }
@@ -2138,7 +2142,7 @@ img.contact-page-bg-pattern {
 }
 @media screen and (min-width: 992px) {
   .timeline-outer {
-    padding-top: 30px;
+    padding-top: 50px;
   }
 }
 .timeline-outer .timeline {
@@ -2425,7 +2429,7 @@ img.contact-page-bg-pattern {
 
 @media screen and (min-width: 992px) {
   .about-founder {
-    padding: 50px 0;
+    padding: 50px 0 0;
   }
 }
 .about-founder .float-left {
@@ -2465,6 +2469,12 @@ img.contact-page-bg-pattern {
   align-items: center;
   position: static;
   justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .meet-our-team .carousel-control-next, .meet-our-team .carousel-control-prev {
+    align-items: flex-start;
+    padding-top: 70px;
+  }
 }
 
 .meet-our-team hr {
@@ -2568,6 +2578,14 @@ img.contact-page-bg-pattern {
   margin-bottom: 30px;
 }
 
+.promoter-container .row {
+  border-bottom: 3px solid #02478c;
+  margin-bottom: 10px;
+}
+.promoter-container .row:last-child {
+  border-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
   .bg-full-height {
     background-image: url(../images/left-bg-full-height.png);
@@ -2594,6 +2612,7 @@ img.contact-page-bg-pattern {
     padding: 0;
     background-color: #fff;
     padding: 0 5px;
+    z-index: 5;
   }
 }
 .section-links {
@@ -2631,7 +2650,7 @@ img.contact-page-bg-pattern {
   text-decoration: none;
 }
 .section-links li a:hover, .section-links li a.active {
-  color: orange;
+  color: #ee6c4d;
   text-decoration: underline;
 }
 
@@ -2641,10 +2660,25 @@ img.contact-page-bg-pattern {
 
 .ht-md {
   height: 36px;
+  position: relative;
 }
 @media screen and (min-width: 992px) {
   .ht-md {
     height: 90px;
+    position: relative;
   }
+}
+.ht-md::after {
+  position: absolute;
+  content: "";
+  height: 1.5px;
+  background-color: #d7d7d7;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.ht-md:first-child::after {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
