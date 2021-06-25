@@ -2579,8 +2579,12 @@ img.contact-page-bg-pattern {
 }
 
 .promoter-container .row {
-  border-bottom: 3px solid #02478c;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .promoter-container .row {
+    border-bottom: 3px solid #02478c;
+  }
 }
 .promoter-container .row:last-child {
   border-bottom: 0;

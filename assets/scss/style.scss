@@ -2627,7 +2627,11 @@ img.contact-page-bg-pattern {
 }
 .promoter-container {
     .row {
+@media screen and (max-width: 767px) {
         border-bottom: 3px solid #02478c;
+
+}
+
         margin-bottom: 10px;
         &:last-child{
         border-bottom: 0;
