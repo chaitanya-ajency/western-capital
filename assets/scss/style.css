@@ -2596,10 +2596,10 @@ img.contact-page-bg-pattern {
   }
 }
 @media screen and (max-width: 992px) {
-  .regulatory .regulatory-banner {
+  .terms-and-privacy .regulatory-banner {
     height: 40vh;
   }
-  .regulatory .regulatory-banner img {
+  .terms-and-privacy .regulatory-banner img {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -2627,11 +2627,6 @@ img.contact-page-bg-pattern {
     display: flex;
     font-size: 10px;
     justify-content: space-between;
-  }
-}
-@media screen and (min-width: 992px) {
-  .section-links {
-    margin-top: 120px;
   }
 }
 .section-links li {
