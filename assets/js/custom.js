@@ -72,8 +72,9 @@
   
         $('.meet-team').slick({
             slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToScroll: 1,
             dots: true,
+            speed: 1000,
             autoplay: false,
             autoplaySpeed: 2000,
             responsive: [{

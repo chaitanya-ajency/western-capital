@@ -1350,14 +1350,12 @@ footer {
     opacity: 1;
 }
 /* bootstrap hack: fix content width inside hidden tabs */
-.tab-content > .tab-pane,
-.pill-content > .pill-pane {
+.tab-content > .tab-pane{
     display: block; /* undo display:none */
     height: 0; /* height:0 is also invisible */
     overflow: hidden; /* no-overflow */
 }
-.tab-content > .active,
-.pill-content > .active {
+.tab-content > .active{
     height: auto; /* let the content decide it */
     @media screen and (min-width: 768px) {
         padding-bottom: 50px;
