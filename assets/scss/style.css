@@ -2737,4 +2737,8 @@ img.contact-page-bg-pattern {
   font-weight: 400;
   cursor: pointer;
 }
+
+.animate__animated {
+  transition: all 0.1s ease-in-out !important;
+}
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
