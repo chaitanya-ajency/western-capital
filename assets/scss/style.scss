@@ -2754,3 +2754,21 @@ img.contact-page-bg-pattern {
         min-height: 40px;
     }
 }
+/////////////////////
+
+.address {
+    &.icon-text .text strong {
+        font-size: 16px;
+        letter-spacing: unset;
+    }
+    &.icon-text .link {
+        font-size: 18px;
+        cursor: pointer;
+    }
+}
+.address-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
