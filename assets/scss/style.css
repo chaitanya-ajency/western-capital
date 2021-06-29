@@ -2682,4 +2682,27 @@ img.contact-page-bg-pattern {
 .ht-md:first-child::after {
   display: none;
 }
+
+.regulatory .card-inner {
+  background-color: #f4f4f4;
+}
+
+.regulatory .card {
+  min-height: 12rem;
+}
+
+.regulatory .card img {
+  width: 25%;
+}
+
+.regulatory a {
+  color: #000;
+  text-transform: capitalize;
+  font-weight: 600;
+  text-decoration: none;
+}
+.regulatory .card-title {
+  margin: 0;
+  min-height: 40px;
+}
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */

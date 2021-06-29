@@ -2732,3 +2732,26 @@ img.contact-page-bg-pattern {
         }
     }
 }
+//////////////////////////////@at-root
+.regulatory .card-inner {
+    background-color: #f4f4f4;
+}
+.regulatory .card {
+    min-height: 12rem;
+}
+.regulatory .card img {
+    width: 25%;
+}
+.regulatory {
+    a{
+        color: #000;
+        text-transform: capitalize;
+        font-weight: 600;
+        text-decoration:none;
+    }
+    .card-title{
+
+        margin: 0;
+        min-height: 40px;
+    }
+}
