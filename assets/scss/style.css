@@ -1893,10 +1893,14 @@ footer .copyright-footer .container img {
   height: 25px;
 }
 .contact-us .icon-text .text {
-  width: 90%;
   font-weight: 500;
   line-height: 27px;
   margin-left: 15px;
+}
+@media screen and (min-width: 992px) {
+  .contact-us .icon-text .text {
+    width: 90%;
+  }
 }
 .contact-us .icon-text .text strong {
   text-transform: uppercase;
@@ -2714,5 +2718,9 @@ img.contact-page-bg-pattern {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.bg-light-grey {
+  background-color: #f5f8fa;
 }
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */

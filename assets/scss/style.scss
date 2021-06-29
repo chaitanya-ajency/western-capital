@@ -1928,7 +1928,11 @@ footer {
             height: 25px;
         }
         .text {
-            width: 90%;
+            @media screen and (min-width: 992px) {
+                width: 90%;
+            }
+            
+            
             font-weight: 500;
             line-height: 27px;
             margin-left: 15px;
@@ -2771,4 +2775,7 @@ img.contact-page-bg-pattern {
     top: 0;
     left: 0;
     
+}
+.bg-light-grey {
+    background-color: #f5f8fa;
 }
