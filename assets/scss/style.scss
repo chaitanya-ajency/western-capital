@@ -40,7 +40,7 @@ section {
         margin-left: unset !important;
     }
 }
-.description-1{
+.description-1 {
     font-size: 22px;
 }
 .description {
@@ -1350,12 +1350,12 @@ footer {
     opacity: 1;
 }
 /* bootstrap hack: fix content width inside hidden tabs */
-.tab-content > .tab-pane{
+.tab-content > .tab-pane {
     display: block; /* undo display:none */
     height: 0; /* height:0 is also invisible */
     overflow: hidden; /* no-overflow */
 }
-.tab-content > .active{
+.tab-content > .active {
     height: auto; /* let the content decide it */
     @media screen and (min-width: 768px) {
         padding-bottom: 50px;
@@ -1931,8 +1931,7 @@ footer {
             @media screen and (min-width: 992px) {
                 width: 90%;
             }
-            
-            
+
             font-weight: 500;
             line-height: 27px;
             margin-left: 15px;
@@ -2523,16 +2522,13 @@ img.contact-page-bg-pattern {
         position: static;
         justify-content: space-between;
     }
-@media screen and (max-width: 767px) {
-        .carousel-control-next, .carousel-control-prev {
-    align-items: flex-start;
-    padding-top: 70px;
-}
-}
-
-
-
-
+    @media screen and (max-width: 767px) {
+        .carousel-control-next,
+        .carousel-control-prev {
+            align-items: flex-start;
+            padding-top: 70px;
+        }
+    }
 }
 .meet-our-team hr {
     width: 100px;
@@ -2629,14 +2625,13 @@ img.contact-page-bg-pattern {
 }
 .promoter-container {
     .row {
-@media screen and (max-width: 767px) {
-        border-bottom: 3px solid #02478c;
-
-}
+        @media screen and (max-width: 767px) {
+            border-bottom: 3px solid #02478c;
+        }
 
         margin-bottom: 10px;
-        &:last-child{
-        border-bottom: 0;
+        &:last-child {
+            border-bottom: 0;
         }
     }
 }
@@ -2746,14 +2741,13 @@ img.contact-page-bg-pattern {
     width: 25%;
 }
 .regulatory {
-    a{
+    a {
         color: #000;
         text-transform: capitalize;
         font-weight: 600;
-        text-decoration:none;
+        text-decoration: none;
     }
-    .card-title{
-
+    .card-title {
         margin: 0;
         min-height: 40px;
     }
@@ -2774,8 +2768,19 @@ img.contact-page-bg-pattern {
     position: absolute;
     top: 0;
     left: 0;
-    
 }
 .bg-light-grey {
     background-color: #f5f8fa;
+}
+.address-type-2 {
+    color: #33475b;
+    span {
+        font-size: 1.2rem;
+        line-height: 2em;
+        font-weight: 500;
+    }
+    p{
+    font-weight: 400;
+    cursor: pointer;
+    }
 }

@@ -2472,7 +2472,8 @@ img.contact-page-bg-pattern {
   justify-content: space-between;
 }
 @media screen and (max-width: 767px) {
-  .meet-our-team .carousel-control-next, .meet-our-team .carousel-control-prev {
+  .meet-our-team .carousel-control-next,
+.meet-our-team .carousel-control-prev {
     align-items: flex-start;
     padding-top: 70px;
   }
@@ -2722,5 +2723,18 @@ img.contact-page-bg-pattern {
 
 .bg-light-grey {
   background-color: #f5f8fa;
+}
+
+.address-type-2 {
+  color: #33475b;
+}
+.address-type-2 span {
+  font-size: 1.2rem;
+  line-height: 2em;
+  font-weight: 500;
+}
+.address-type-2 p {
+  font-weight: 400;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
