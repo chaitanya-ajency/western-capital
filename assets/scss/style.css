@@ -2555,7 +2555,7 @@ img.contact-page-bg-pattern {
 @media screen and (min-width: 992px) {
   .meet-our-team {
     padding: 20px 0 100px;
-    margin-top: 50px;
+    padding-top: 50px;
   }
 }
 .meet-our-team .carousel-item .author-image {
