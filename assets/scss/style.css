@@ -2810,7 +2810,12 @@ img.contact-page-bg-pattern {
 }
 
 .translate-center {
-  padding-top: 8%;
+  width: 90%;
+}
+@media screen and (min-width: 992px) {
+  .translate-center {
+    padding-top: 8%;
+  }
 }
 
 .regulatory a {

@@ -2854,6 +2854,7 @@ img.contact-page-bg-pattern {
                 text-decoration: underline;
                 text-decoration-color: $text-orange;
                 position: relative;
+                
                 // &::after {
                 //     content: "";
                 //     position: absolute;
@@ -2870,7 +2871,12 @@ img.contact-page-bg-pattern {
     }
 }
 .translate-center{
+  @media screen and (min-width: 992px) {
     padding-top: 8%;
+  }
+  
+  
+    width: 90%;
 }
 .regulatory {
     a {
