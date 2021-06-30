@@ -2720,12 +2720,15 @@ img.contact-page-bg-pattern {
         .subtitle {
             margin-bottom: 15px;
         }
+        .separator{
+            width: 95%;
+        }
     }
     .promoter-container {
         .row {
+            position: relative;
             @media screen and (max-width: 767px) {
-                border-bottom: 3px solid #02478c;
-
+                
                 margin-bottom: 10px;
             }
 

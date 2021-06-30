@@ -2679,9 +2679,14 @@ img.contact-page-bg-pattern {
 .Promoters .team-text .subtitle {
   margin-bottom: 15px;
 }
+.Promoters .team-text .separator {
+  width: 95%;
+}
+.Promoters .promoter-container .row {
+  position: relative;
+}
 @media screen and (max-width: 767px) {
   .Promoters .promoter-container .row {
-    border-bottom: 3px solid #02478c;
     margin-bottom: 10px;
   }
 }
