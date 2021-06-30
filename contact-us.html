@@ -312,6 +312,21 @@
             });
         });
     </script>
+    <script>
+        
+        // Create a Marker
+var marker = new google.maps.Marker({
+    position: location,
+    map: map,
+    title:'Sample Tool Tip'
+  });
+
+
+// Set Icon on any event
+google.maps.event.addListener(marker, "rightclick", function() {
+        marker.setIcon('blank.png'); // set image path here...
+});
+    </script>
 </body>
 
 </html>
