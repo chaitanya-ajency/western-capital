@@ -1627,7 +1627,11 @@ footer {
         overflow: hidden;
     }
     .testimonial-slide {
+      @media screen and (min-width: 992px) {
         margin-top: 45px;
+      }
+      
+      
     }
     .testimonial-body {
         border: 1px solid #dddddd;
