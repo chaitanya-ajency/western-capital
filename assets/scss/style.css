@@ -2429,9 +2429,15 @@ img.contact-page-bg-pattern {
        object-position: left;
   }
 }
-.geographical-map .banner-text {
-  position: absolute;
-  bottom: 15%;
+@media screen and (max-width: 768px) {
+  .geographical-map .banner-text {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0 12px;
+  }
 }
 .geographical-map .banner-text .title {
   color: #fff;

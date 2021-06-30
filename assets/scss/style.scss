@@ -2486,8 +2486,16 @@ img.contact-page-bg-pattern {
     }
 
     .banner-text {
+      @media screen and (max-width: 768px) {
         position: absolute;
         bottom: 15%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding: 0 12px;
+      }
+      
+      
         .title {
             color: #fff;
             font-size: 2.6em;
