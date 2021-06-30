@@ -2146,6 +2146,7 @@ img.contact-page-bg-pattern {
 @media screen and (min-width: 992px) {
   .timeline-outer {
     padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 .timeline-outer .timeline {
