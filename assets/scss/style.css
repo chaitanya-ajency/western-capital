@@ -2913,27 +2913,4 @@ img.contact-page-bg-pattern {
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
-
-.elementToFadeInAndOut {
-  -webkit-animation: fadeinout 0.54s linear forwards;
-  animation: fadeinout 0.54s linear forwards;
-}
-
-@-webkit-keyframes fadeinout {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeinout {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */

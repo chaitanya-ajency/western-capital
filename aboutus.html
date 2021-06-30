@@ -422,11 +422,11 @@
 
                 </div>
                 <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-<img alt="arrows" src="assets/images/arrow-left.png" class="img-fluid" width="30px">
+<img alt="arrows" src="assets/images/arrow-left.png" class="img-fluid" width="30px" onclick="myFunction()">
     <span class="visually-hidden">Previous</span>
   </button>
                 <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <img alt="arrows" src="assets/images/arrow-right.png" class="img-fluid" width="30px">
+    <img alt="arrows" src="assets/images/arrow-right.png" class="img-fluid" width="30px" onclick="myFunction()">
     <span class="visually-hidden">Next</span>
                     </div>
             </div>
@@ -448,7 +448,7 @@
                             <a href="https://chaitanya-ajency.github.io/western-capital/aboutus">About us</a>
                         </li>
                         <li>
-                            <a href="https://chaitanya-ajency.github.io/western-capital/advisors">Advisor</a>
+                            <a href="https://chaitanya-ajency.github.io/western-capital/advisors">Advisors</a>
                         </li>
                         <li>
                             <a href="https://chaitanya-ajency.github.io/western-capital/promoter">Promoters</a>
@@ -481,7 +481,7 @@
                             <a href="https://chaitanya-ajency.github.io/western-capital/regulatory">regulatory</a>
                         </li>
                         <li>
-                            <a href="https://chaitanya-ajency.github.io/western-capital/terms-and-condition">Terms and Conditions</a>
+                            <a href="https://chaitanya-ajency.github.io/western-capital/terms-and-condition">Terms & Conditions</a>
                         </li>
                         <li>
                             <a href="https://chaitanya-ajency.github.io/western-capital/contact-us">Contact us</a>
@@ -514,6 +514,7 @@
 <script>
         
         $(document).ready(function() {
+            
             $(".carousel-control-next").click(function() {
                 $('.fadeInRight').fadeIn().fadeOut().fadeIn();
             });
