@@ -2207,6 +2207,7 @@ img.contact-page-bg-pattern {
   background-image: url(../images/timeline-bg.png);
   background-size: cover;
   padding-top: 15px;
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 992px) {
   .timeline-outer {
@@ -2407,6 +2408,12 @@ img.contact-page-bg-pattern {
   padding: 15px 25px;
   font-size: 22px;
   font-weight: 400;
+}
+
+.chart {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .geographical-map {
