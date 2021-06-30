@@ -407,7 +407,7 @@ section {
   position: relative;
   width: 100%;
   z-index: 1;
-  height: 70vh;
+  height: 80vh;
 }
 @media screen and (min-width: 768px) {
   .slideshow {
@@ -2118,7 +2118,7 @@ img.contact-page-bg-pattern {
 }
 @media screen and (max-width: 768px) {
   .banner {
-    height: 70vh;
+    height: 80vh;
   }
   .banner img {
     height: 100%;
