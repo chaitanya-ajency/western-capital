@@ -6,6 +6,7 @@ $text-orange: #ee6c4d;
 @import url(../font/segoe-ui-4-cufonfonts/SegoeUI.ttf);
 body {
     font-family: "Segoe UI";
+    color: #212529;
 }
 section {
     padding: 15px 0;
@@ -28,7 +29,7 @@ section {
     z-index: 2;
     font-weight: bold;
     text-align: center;
-    color: #000000;
+    color: #212529;
     font-size: 1.6em;
     margin-bottom: 15px;
     @media screen and (min-width: 992px) {
@@ -2803,7 +2804,8 @@ img.contact-page-bg-pattern {
             letter-spacing: 0.15em;
         }
         a {
-            color: #000;
+            color: #212529;
+
             text-decoration: none;
             &:hover,
             &.active {
@@ -2863,25 +2865,13 @@ img.contact-page-bg-pattern {
                 text-decoration: underline;
                 text-decoration-color: $text-orange;
                 position: relative;
-                
-                // &::after {
-                //     content: "";
-                //     position: absolute;
-                //     left: 0;
-                //     right: 0;
-                //     height: 2px;
-                //     background-color: #ee6c4d;
-                //     bottom: -10px;
-                //     transition: all 0.2s ease-in-out;
-                //     width: 100%;
-                // }
             }
         }
     }
 }
 .translate-center{
   @media screen and (min-width: 992px) {
-    padding-top: 8%;
+    padding-top: 5%;
   }
   
   
@@ -2889,13 +2879,20 @@ img.contact-page-bg-pattern {
 }
 .regulatory {
     a {
-        color: #000;
+        color: #212529;
         text-transform: capitalize;
         font-weight: 600;
         text-decoration: none;
     }
     .card-title {
         margin: 0;
+        @media screen and (min-width: 992px) {
+        font-size: 22px;
+        color: #212529;
+
+        }
+        
+        
     }
 }
 /////////////////////

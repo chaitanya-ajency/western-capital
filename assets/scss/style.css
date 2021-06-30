@@ -1,6 +1,7 @@
 @import url(../font/segoe-ui-4-cufonfonts/SegoeUI.ttf);
 body {
   font-family: "Segoe UI";
+  color: #212529;
 }
 
 section {
@@ -26,7 +27,7 @@ section {
   z-index: 2;
   font-weight: bold;
   text-align: center;
-  color: #000000;
+  color: #212529;
   font-size: 1.6em;
   margin-bottom: 15px;
 }
@@ -2759,7 +2760,7 @@ img.contact-page-bg-pattern {
   }
 }
 .section-links li a {
-  color: #000;
+  color: #212529;
   text-decoration: none;
 }
 .section-links li a:hover, .section-links li a.active {
@@ -2824,18 +2825,24 @@ img.contact-page-bg-pattern {
 }
 @media screen and (min-width: 992px) {
   .translate-center {
-    padding-top: 8%;
+    padding-top: 5%;
   }
 }
 
 .regulatory a {
-  color: #000;
+  color: #212529;
   text-transform: capitalize;
   font-weight: 600;
   text-decoration: none;
 }
 .regulatory .card-title {
   margin: 0;
+}
+@media screen and (min-width: 992px) {
+  .regulatory .card-title {
+    font-size: 22px;
+    color: #212529;
+  }
 }
 
 .address.icon-text .text strong {
