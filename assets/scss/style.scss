@@ -2942,3 +2942,41 @@ img.contact-page-bg-pattern {
 .delay-4 {
     animation-delay: 0.7s;
 }
+
+@media only screen and (min-width : 768px) {
+.disable-animation	.fadeInRight {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+}
+.fadeout-opacity{
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.elementToFadeInAndOut {
+    -webkit-animation: fadeinout .54s linear forwards;
+    animation: fadeinout .54s linear forwards;
+}
+
+
+@keyframes fadeinout {
+  0%{ opacity: 1; }
+  100%{ opacity: 0; }
+
+}

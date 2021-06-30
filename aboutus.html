@@ -297,13 +297,13 @@
                 <div class="outer-carousel-container">
                     <div class="carousel-inner">
                         <div class="carousel-item  active">
-                            <div class="container">
-                                <div class="row justify-content-center">
+                            <div class="container fade-out animate__animated fadeInRight">
+                                <div class="row justify-content-center disable-animation">
                                     <div class="col-md-4">
                                         <img src="assets/images/team1.png" class="d-block  author-image animate__animated fadeInRight delay-1 " alt="banner">
                                     </div>
                                     <div class="col-md-8">
-                                        <div class="team-text ">
+                                        <div class="team-text disable-animation">
                                             <div class="title text-md-start  text-capitalize animate__animated fadeInRight delay-2">
                                                 chandra mouli
                                             </div>
@@ -321,13 +321,13 @@
                             </div>
                         </div>
                         <div class="carousel-item  ">
-                            <div class="container">
-                                <div class="row justify-content-center">
+                            <div class="container fade-out animate__animated fadeInRight">
+                                <div class="row justify-content-center disable-animation">
                                     <div class="col-md-4">
                                         <img src="assets/images/team2.png" class="d-block  author-image animate__animated fadeInRight delay-1" alt="...">
                                     </div>
                                     <div class="col-md-8">
-                                        <div class="team-text ">
+                                        <div class="team-text disable-animation">
                                             <div class="title text-md-start  text-capitalize animate__animated fadeInRight delay-2">
                                                 chandra mouli
                                             </div>
@@ -345,13 +345,13 @@
                             </div>
                         </div>
                         <div class="carousel-item  ">
-                            <div class="container">
-                                <div class="row justify-content-center">
+                            <div class="container fade-out animate__animated fadeInRight">
+                                <div class="row justify-content-center disable-animation">
                                     <div class="col-md-4">
                                         <img src="assets/images/team3.png" class="d-block   author-image animate__animated fadeInRight" alt="...">
                                     </div>
                                     <div class="col-md-8">
-                                        <div class="team-text ">
+                                        <div class="team-text disable-animation">
                                             <div class="title text-md-start  text-capitalize animate__animated fadeInRight delay-2">
                                                 chandra mouli
                                             </div>
@@ -369,13 +369,13 @@
                             </div>
                         </div>
                         <div class="carousel-item  ">
-                            <div class="container">
-                                <div class="row justify-content-center">
+                            <div class="container fade-out animate__animated fadeInRight">
+                                <div class="row justify-content-center disable-animation">
                                     <div class="col-md-4">
                                         <img src="assets/images/team4.png" class="d-block   author-image animate__animated fadeInRight" alt="...">
                                     </div>
                                     <div class="col-md-8">
-                                        <div class="team-text ">
+                                        <div class="team-text disable-animation">
                                             <div class="title text-md-start  text-capitalize animate__animated fadeInRight delay-2">
                                                 chandra mouli
                                             </div>
@@ -511,7 +511,17 @@
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/custom.js"></script>
     
-
+<script>
+        
+        $(document).ready(function() {
+            $(".carousel-control-next").click(function() {
+                $('.fadeInRight').fadeIn().fadeOut().fadeIn();
+            });
+            $(".carousel-control-prev").click(function() {
+                $('.fade-out').removeClass('animate__animated').fadeOut().fadeIn();
+            });
+        });
+</script>
 </body>
 
 </html>
