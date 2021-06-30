@@ -2271,7 +2271,7 @@ img.contact-page-bg-pattern {
 .timeline-outer .timeline::after {
   content: "";
   position: absolute;
-  height: 85%;
+  height: 86%;
   width: 2px;
   background-color: #c4c4c4;
   top: 0;
@@ -2282,7 +2282,7 @@ img.contact-page-bg-pattern {
   .timeline-outer .timeline::after {
     content: "";
     position: absolute;
-    height: 88%;
+    height: 93%;
     width: 2px;
     background-color: #c4c4c4;
     top: 0;
