@@ -158,7 +158,7 @@ section {
         .nav-item {
             position: relative;
             margin-right: 20px;
-            .nav-link {
+            a {
                 overflow: hidden;
                 color: #fff;
                 opacity: 75%;
@@ -194,6 +194,7 @@ section {
     .dropdown-menu {
         width: 200px;
         max-width: 200px;
+        padding: 0 !important;
         &::after {
             content: "";
             position: absolute;
@@ -206,6 +207,38 @@ section {
             border: 1px solid rgba(0, 0, 0, 0.15);
             border-bottom: 0;
             border-right: 0;
+        }
+        li {
+            .dropdown-item {
+                padding: 0;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+                position: relative;
+                color: $theme-color;
+                &:first-child::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    height: 1px;
+                    margin: auto;
+                    width: 85%;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+                }
+                &:hover,
+                &:active {
+                    color: $color-blue-dark;
+                    text-decoration: none;
+                    background-color: #fff !important;
+                }
+            }
+            .dropdown-item.active, .dropdown-item:active {
+                text-decoration: none;
+                background-color: #fff;
+            }
         }
     }
     @media screen and (min-width: 1200px) {
@@ -2206,11 +2239,10 @@ img.contact-page-bg-pattern {
         position: relative;
         font-weight: 300;
         margin-top: 15px;
-       @media screen and (min-width: 768px) {
-        margin-top: 50px;
-       }
-       
-       
+        @media screen and (min-width: 768px) {
+            margin-top: 50px;
+        }
+
         > li {
             position: relative;
             width: 50%;
