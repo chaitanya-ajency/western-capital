@@ -2039,6 +2039,11 @@ footer .copyright-footer .container img {
     margin-right: auto;
   }
 }
+@media screen and (min-width: 992px) {
+  .contact-form {
+    margin-top: 35px;
+  }
+}
 .contact-form .subtitle {
   line-height: initial;
 }
@@ -2498,7 +2503,7 @@ img.contact-page-bg-pattern {
   .geographical-map .about-map {
     display: block;
     width: 100%;
-    margin-top: -18%;
+    margin-top: -14%;
     position: relative;
     z-index: 9;
   }
@@ -2550,6 +2555,7 @@ img.contact-page-bg-pattern {
 @media screen and (min-width: 992px) {
   .meet-our-team {
     padding: 20px 0 100px;
+    margin-top: 50px;
   }
 }
 .meet-our-team .carousel-item .author-image {
