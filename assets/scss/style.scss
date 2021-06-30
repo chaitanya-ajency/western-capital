@@ -1985,7 +1985,13 @@ footer {
 ///////////////////// Footer
 .contact-us {
     background: #e6edf3;
-    padding-top: 92px;
+    padding-top: 80px;
+
+    @media screen and (min-width: 992px) {
+        padding-top: 92px;
+    }
+    
+    
     .icon-text {
         img {
             width: 25px;
@@ -2072,7 +2078,6 @@ footer {
 }
 #contact {
     background: #fff;
-    padding: 25px 0 0;
     margin: auto;
     input {
         width: 100%;

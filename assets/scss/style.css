@@ -1948,7 +1948,12 @@ footer .copyright-footer .container img {
 
 .contact-us {
   background: #e6edf3;
-  padding-top: 92px;
+  padding-top: 80px;
+}
+@media screen and (min-width: 992px) {
+  .contact-us {
+    padding-top: 92px;
+  }
 }
 .contact-us .icon-text img {
   width: 25px;
@@ -2039,7 +2044,6 @@ footer .copyright-footer .container img {
 
 #contact {
   background: #fff;
-  padding: 25px 0 0;
   margin: auto;
 }
 #contact input {
