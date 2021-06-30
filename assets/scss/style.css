@@ -2154,7 +2154,12 @@ img.contact-page-bg-pattern {
   margin: 0;
   position: relative;
   font-weight: 300;
-  margin-top: 50px;
+  margin-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  .timeline-outer .timeline {
+    margin-top: 50px;
+  }
 }
 .timeline-outer .timeline > li {
   position: relative;
@@ -2397,7 +2402,7 @@ img.contact-page-bg-pattern {
   }
 }
 .geographical-map .about-map {
-  margin-top: 15px;
+  padding-top: 15px;
 }
 @media screen and (min-width: 768px) {
   .geographical-map .about-map {
@@ -2472,6 +2477,7 @@ img.contact-page-bg-pattern {
   align-items: center;
   position: static;
   justify-content: space-between;
+  margin-bottom: 0;
 }
 @media screen and (max-width: 767px) {
   .meet-our-team .carousel-control-next,
