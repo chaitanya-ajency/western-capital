@@ -2022,9 +2022,15 @@ footer .copyright-footer .container img {
   margin-left: 15px;
 }
 
+.map {
+  width: 80%;
+  margin: auto;
+}
 @media screen and (min-width: 992px) {
   .map {
+    margin: unset;
     margin-top: -20%;
+    margin-right: auto;
   }
 }
 .contact-form .subtitle {
@@ -2843,21 +2849,15 @@ img.contact-page-bg-pattern {
   left: 0;
 }
 
-.bg-light-grey {
-  background-color: #f5f8fa;
+.locate {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  margin-top: 3px;
 }
 
-.address-type-2 {
-  color: #33475b;
-}
-.address-type-2 span {
-  font-size: 1.2rem;
-  line-height: 2em;
-  font-weight: 500;
-}
-.address-type-2 p {
-  font-weight: 400;
-  cursor: pointer;
+.bg-light-grey {
+  background-color: #f5f8fa;
 }
 
 .delay-1 {

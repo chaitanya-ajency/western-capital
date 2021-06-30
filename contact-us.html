@@ -77,6 +77,8 @@
                         </div>
                         <a href="mailto:hello@westerncapital.com" class="text-center text-md-start">hello@westerncapital.com</a>
                     </div>
+                </div>
+                <div class="col-md-4 col-lg-3 " data-aos="fade-up" data-aos-duration="1000">
                     <div class="icon-text">
                         <div class="d-flex justify-content-center justify-content-md-start">
                             <img src="assets/images/phone.png" alt="">
@@ -84,7 +86,8 @@
                                 <strong>call us at</strong>
                             </div>
                         </div>
-                        <a href="tel:+91 9876 543 210" class="text-center text-md-start">+91 9876 543 210</a>
+                        <a href="tel:+91 22 4003 3356" class="text-center d-inline-block text-md-start">+91 22 4003 3356 /</a>
+                        <a href="tel:+91 22 825 6772" class="text-center d-inline-block text-md-start">+91 22 825 6772</a>
                     </div>
                 </div>
                 <!-- <div class="col-md-5 col-lg-3 offset-lg-1 mt-3 mt-md-0">
@@ -100,8 +103,8 @@
                     <a href="#" class="get-direction">get directions</a>
                     <img src="assets/images/direction-arrow.png" alt="" class="direction-arrow">
                 </div> -->
-                <div class="col-md-3 col-lg-4 offset-lg-1 mt-4 mt-md-0" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="assets/images/map.png" class="d-block w-100 map" alt="">
+                <div class="col-md-3 col-lg-5  mt-4 mt-md-0" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="assets/images/map.png" class="d-block map" alt="">
                 </div>
             </div>
         </div>
@@ -155,28 +158,36 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d404.9371344589306!2d72.8659576282865!3d19.112772467219795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c83980025da9%3A0xb61129f88fb20d72!2sDynasty%20Business%20Park!5e0!3m2!1sen!2sin!4v1624966771748!5m2!1sen!2sin"
                             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="address-2"></iframe>
                     </div>
-                    <div class="col-lg-3 px-4 bg-light-grey pt-3 mt-md-0 d-flex flex-column justify-content-center">
-                        <!-- <div class="address icon-text mb-4 mb-md-5">
-                            <div class="d-flex">
-                                <img src="assets/images/locate.png" alt="">
+                    <div class="col-lg-4 px-4 ps-3 bg-light-grey pt-3 mt-md-0 d-flex flex-column justify-content-center">
 
-                                <div class="text">
-                                    <strong>Registered office address:</strong>
+                        <div class="row">
+                            <div class="px-md-0 col-2 col-md-1">
+                                <img src="assets/images/locate.png" alt="" class="locate">
+
+                            </div>
+                            <div class="col-10 ps-0">
+                                <div class="address icon-text mb-4 mb-md-4">
+
+                                    <div class="d-flex">
+
+                                        <div class="text w-100 ms-0">
+                                            <strong>Registered office address:</strong>
+                                        </div>
+                                    </div>
+                                    <p class="link address-link-1">A-7001, World Trade Centre Ring Road, Surat, Gujarat, - 395002</p>
+                                </div>
+                                <div class="address icon-text ">
+                                    <div class="d-flex">
+
+                                        <div class="text w-100 ms-0">
+                                            <strong>corporate office address:</strong>
+                                        </div>
+                                    </div>
+                                    <p class="link address-link-2">C-402,Business Plaza, Andheri Kurla Road, Andheri (East), Mumbai - 400093</p>
                                 </div>
                             </div>
-                            <p class="link address-link-1">A-7001, World Trade Centre Ring Road, Surat, Gujarat, - 395002</p>
                         </div>
-                        <div class="address icon-text ">
-                            <div class="d-flex">
-                                <img src="assets/images/locate.png" alt="">
-
-                                <div class="text">
-                                    <strong>corporate office address:</strong>
-                                </div>
-                            </div>
-                            <p class="link address-link-2">C-402,Business Plaza, Andheri Kurla Road, Andheri (East), Mumbai - 400093</p>
-                        </div> -->
-                        <div class="address-type-2 icon-text mb-3 mb-md-5">
+                        <!-- <div class="address-type-2 icon-text mb-3 mb-md-5">
 
                                     <span>Registered office address:</span>
                             <p class=" address-link-1 mb-0">A-7001, World Trade Centre Ring Road, Surat, Gujarat, - 395002</p>
@@ -185,7 +196,7 @@
 
                                     <span>Corporate office address:</span>
                             <p class=" address-link-2">C-402,Business Plaza, Andheri Kurla Road, Andheri (East), Mumbai - 400093</p>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
@@ -315,19 +326,18 @@
         });
     </script>
     <script>
-        
         // Create a Marker
-var marker = new google.maps.Marker({
-    position: location,
-    map: map,
-    title:'Sample Tool Tip'
-  });
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            title: 'Sample Tool Tip'
+        });
 
 
-// Set Icon on any event
-google.maps.event.addListener(marker, "rightclick", function() {
-        marker.setIcon('blank.png'); // set image path here...
-});
+        // Set Icon on any event
+        google.maps.event.addListener(marker, "rightclick", function() {
+            marker.setIcon('blank.png'); // set image path here...
+        });
     </script>
 </body>
 

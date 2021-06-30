@@ -2055,8 +2055,12 @@ footer {
     margin-left: 15px;
 }
 .map {
+    width: 80%;
+    margin: auto;
     @media screen and (min-width: 992px) {
+        margin: unset;
         margin-top: -20%;
+        margin-right: auto;
     }
 }
 ////////////////////////////
@@ -2906,20 +2910,15 @@ img.contact-page-bg-pattern {
     top: 0;
     left: 0;
 }
+.locate{
+    
+    width: 60%;
+    margin: auto;
+    display: flex;
+    margin-top: 3px;
+}
 .bg-light-grey {
     background-color: #f5f8fa;
-}
-.address-type-2 {
-    color: #33475b;
-    span {
-        font-size: 1.2rem;
-        line-height: 2em;
-        font-weight: 500;
-    }
-    p {
-        font-weight: 400;
-        cursor: pointer;
-    }
 }
 
 .delay-1 {
