@@ -2703,10 +2703,10 @@ img.contact-page-bg-pattern {
   }
 }
 @media screen and (max-width: 992px) {
-  .terms-and-privacy .regulatory-banner {
+  .regulatory-banner {
     height: 40vh;
   }
-  .terms-and-privacy .regulatory-banner img {
+  .regulatory-banner img {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;

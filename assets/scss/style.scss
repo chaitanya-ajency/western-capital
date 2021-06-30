@@ -2746,16 +2746,17 @@ img.contact-page-bg-pattern {
 }
 
 ///////////////////////////@at-root
-.terms-and-privacy {
-    .regulatory-banner {
-        @media screen and (max-width: 992px) {
-            height: 40vh;
-            img {
-                height: 100%;
-                object-fit: cover;
-            }
+.regulatory-banner {
+    @media screen and (max-width: 992px) {
+        height: 40vh;
+        img {
+            height: 100%;
+            object-fit: cover;
         }
     }
+}
+.terms-and-privacy {
+  
 }
 @media screen and (max-width: 992px) {
     .position-sm-sticky {
