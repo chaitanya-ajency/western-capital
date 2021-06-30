@@ -2698,6 +2698,7 @@ img.contact-page-bg-pattern {
 }
 .Promoters .team-text .separator {
   width: 95%;
+  margin-bottom: 20px;
 }
 .Promoters .promoter-container .row {
   position: relative;
