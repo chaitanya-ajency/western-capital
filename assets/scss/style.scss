@@ -8,27 +8,45 @@ body {
     font-family: "Segoe UI";
 }
 section {
-    padding: 15px 0;
+    padding: 15px 12px;
 }
 .header-shadow {
     box-shadow: 0 10px 10px -11px #000;
 }
+@media screen and (max-width: 992px) {
+    .p-15 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
 .title {
     z-index: 2;
     font-weight: bold;
     text-align: center;
     color: #000000;
     font-size: 1.6em;
+    margin-bottom: 15px;
     @media screen and (min-width: 992px) {
         font-size: 1.875em;
         line-height: 42px;
     }
 }
+@media screen and (max-width: 768px) {
+    .pt-3 {
+        padding-top: 15px !important;
+    }
+    .pb-3 {
+        padding-bottom: 15px !important;
+    }
+}
+
 .font-bold {
     font-weight: bold;
 }
 .subtitle {
     font-weight: 400;
+    margin-bottom: 15px;
     @media screen and (min-width: 992px) {
         font-size: 1.375em;
         line-height: 53px;
@@ -235,7 +253,8 @@ section {
                     background-color: #fff !important;
                 }
             }
-            .dropdown-item.active, .dropdown-item:active {
+            .dropdown-item.active,
+            .dropdown-item:active {
                 text-decoration: none;
                 background-color: #fff;
             }
@@ -2660,31 +2679,32 @@ img.contact-page-bg-pattern {
     .team-text {
         .title {
             margin-bottom: 15px;
-font-weight: 500;
+            font-weight: 500;
             line-height: 20px !important;
-           @media screen and (min-width: 768px) {
-            margin-bottom: 30px;
-font-weight: 400;
+            @media screen and (min-width: 768px) {
+                margin-bottom: 30px;
+                font-weight: 400;
+            }
+        }
+        .subtitle {
+            margin-bottom: 15px;
+        }
+    }
+    .promoter-container {
+        .row {
+            @media screen and (max-width: 767px) {
+                border-bottom: 3px solid #02478c;
 
-           }
-           
-           
+                margin-bottom: 10px;
+            }
+
+            &:last-child {
+                border-bottom: 0;
+            }
         }
     }
 }
-.promoter-container {
-    .row {
-        @media screen and (max-width: 767px) {
-            border-bottom: 3px solid #02478c;
-            
-        margin-bottom: 10px;
-        }
 
-        &:last-child {
-            border-bottom: 0;
-        }
-    }
-}
 @media screen and (min-width: 768px) {
     .bg-full-height {
         background-image: url(../images/left-bg-full-height.png);

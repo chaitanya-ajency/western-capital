@@ -4,19 +4,26 @@ body {
 }
 
 section {
-  padding: 15px 0;
+  padding: 15px 12px;
 }
 
 .header-shadow {
   box-shadow: 0 10px 10px -11px #000;
 }
 
+@media screen and (max-width: 992px) {
+  .p-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
 .title {
   z-index: 2;
   font-weight: bold;
   text-align: center;
   color: #000000;
   font-size: 1.6em;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 992px) {
   .title {
@@ -25,12 +32,22 @@ section {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .pt-3 {
+    padding-top: 15px !important;
+  }
+
+  .pb-3 {
+    padding-bottom: 15px !important;
+  }
+}
 .font-bold {
   font-weight: bold;
 }
 
 .subtitle {
   font-weight: 400;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 992px) {
   .subtitle {
@@ -248,7 +265,8 @@ section {
   text-decoration: none;
   background-color: #fff !important;
 }
-.navbar .dropdown-menu li .dropdown-item.active, .navbar .dropdown-menu li .dropdown-item:active {
+.navbar .dropdown-menu li .dropdown-item.active,
+.navbar .dropdown-menu li .dropdown-item:active {
   text-decoration: none;
   background-color: #fff;
 }
@@ -2625,14 +2643,16 @@ img.contact-page-bg-pattern {
     font-weight: 400;
   }
 }
-
+.Promoters .team-text .subtitle {
+  margin-bottom: 15px;
+}
 @media screen and (max-width: 767px) {
-  .promoter-container .row {
+  .Promoters .promoter-container .row {
     border-bottom: 3px solid #02478c;
     margin-bottom: 10px;
   }
 }
-.promoter-container .row:last-child {
+.Promoters .promoter-container .row:last-child {
   border-bottom: 0;
 }
 
