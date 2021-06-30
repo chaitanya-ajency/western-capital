@@ -1595,8 +1595,10 @@ footer .copyright-footer .container img {
   background-color: #fff;
   overflow: hidden;
 }
-.testimonial-section .testimonial-slide {
-  margin-top: 45px;
+@media screen and (min-width: 992px) {
+  .testimonial-section .testimonial-slide {
+    margin-top: 45px;
+  }
 }
 .testimonial-section .testimonial-body {
   border: 1px solid #dddddd;
@@ -2738,7 +2740,23 @@ img.contact-page-bg-pattern {
   cursor: pointer;
 }
 
-.animate__animated {
-  transition: all 0.1s ease-in-out !important;
+.delay-1 {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.delay-2 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.delay-3 {
+  -webkit-animation-delay: 0.55s;
+          animation-delay: 0.55s;
+}
+
+.delay-4 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */

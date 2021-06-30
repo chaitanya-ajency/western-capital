@@ -1627,11 +1627,9 @@ footer {
         overflow: hidden;
     }
     .testimonial-slide {
-      @media screen and (min-width: 992px) {
-        margin-top: 45px;
-      }
-      
-      
+        @media screen and (min-width: 992px) {
+            margin-top: 45px;
+        }
     }
     .testimonial-body {
         border: 1px solid #dddddd;
@@ -2783,11 +2781,21 @@ img.contact-page-bg-pattern {
         line-height: 2em;
         font-weight: 500;
     }
-    p{
-    font-weight: 400;
-    cursor: pointer;
+    p {
+        font-weight: 400;
+        cursor: pointer;
     }
 }
-.animate__animated {
-    transition: all .1s ease-in-out !important;
-  }
+
+.delay-1 {
+    animation-delay: 0.25s;
+}
+.delay-2 {
+    animation-delay: 0.4s;
+}
+.delay-3 {
+    animation-delay: 0.55s;
+}
+.delay-4 {
+    animation-delay: 0.7s;
+}
