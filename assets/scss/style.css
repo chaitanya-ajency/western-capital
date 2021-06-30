@@ -2615,16 +2615,21 @@ img.contact-page-bg-pattern {
 }
 
 .Promoters .team-text .title {
+  margin-bottom: 15px;
+  font-weight: 500;
   line-height: 20px !important;
-  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .Promoters .team-text .title {
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
 }
 
-.promoter-container .row {
-  margin-bottom: 10px;
-}
 @media screen and (max-width: 767px) {
   .promoter-container .row {
     border-bottom: 3px solid #02478c;
+    margin-bottom: 10px;
   }
 }
 .promoter-container .row:last-child {

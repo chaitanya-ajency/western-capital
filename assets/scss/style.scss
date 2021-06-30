@@ -2659,8 +2659,16 @@ img.contact-page-bg-pattern {
 .Promoters {
     .team-text {
         .title {
+            margin-bottom: 15px;
+font-weight: 500;
             line-height: 20px !important;
+           @media screen and (min-width: 768px) {
             margin-bottom: 30px;
+font-weight: 400;
+
+           }
+           
+           
         }
     }
 }
@@ -2668,9 +2676,10 @@ img.contact-page-bg-pattern {
     .row {
         @media screen and (max-width: 767px) {
             border-bottom: 3px solid #02478c;
+            
+        margin-bottom: 10px;
         }
 
-        margin-bottom: 10px;
         &:last-child {
             border-bottom: 0;
         }
