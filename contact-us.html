@@ -12,39 +12,41 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link href="assets/scss/style.css" rel="stylesheet" />
 
     <title>Wester Capital</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg scrolled-down">
-        <div class="container">
-            <a class="navbar-brand scrolltop" href="#"><img alt="" src="assets/images/LOGO1.png" class="logo"></a>
-            <a class="navbar-brand scrolldown" href="#"><img alt="" src="assets/images/onscroll.png" class="logo"></a>
+    <nav class="navbar navbar-expand-lg border-bottom scrolled-down">
+        <div class="container justify-content-start justify-content-md-between">
+            <img alt="" src="assets/images/bars-invert.png" class="navbar-toggler bg-transparent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse">
 
-            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
-                <i class="fas fa-bars"></i>
-                    </button>
+
+            <a class="navbar-brand scrolldown d-block " href="https://chaitanya-ajency.github.io/western-capital/"><img alt="" src="assets/images/onscroll.png" class="logo"></a>
+
+
             <div class="collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
                 <ul class="navbar-nav text-capitalize mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a aria-current="page" class="nav-link" href="#">Home</a>
+                        <a aria-current="page" class="nav-link" href="https://chaitanya-ajency.github.io/western-capital/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">about us</a>
+                        <a class="nav-link" href="https://chaitanya-ajency.github.io/western-capital/aboutus">about us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">services</a>
+                        <a class="nav-link " href="#services">services</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a aria-expanded="false" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdown" role="button">company</a>
+                        <a aria-expanded="false" class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdown" role="button" disabled>company</a>
                         <ul aria-labelledby="navbarDropdown" class="dropdown-menu px-2">
-                            <li class="border-bottom pb-2 pe-md-5">
-                                <a class="dropdown-item" href="#">our advisors</a>
+                            <li class="">
+                                <a class="dropdown-item" href="https://chaitanya-ajency.github.io/western-capital/advisors">our advisors</a>
                             </li>
-                            <li class="pt-2">
-                                <a class="dropdown-item" href="#">our promoters</a>
+                            <li class="">
+                                <a class="dropdown-item" href="https://chaitanya-ajency.github.io/western-capital/promoter">our promoters</a>
                             </li>
                         </ul>
                     </li>
@@ -55,37 +57,40 @@
             </div>
         </div>
     </nav>
-    <section class="contact-us pb-5">
+    <section class="contact-us pb-3 pb-lg-5">
         <div class="container">
             <div class="row ">
                 <div class="col-md-3 ">
-                    <div class="title text-start mb-4">
+                    <div class="title text-center text-md-start mb-4 mb-md-2 mb-lg-4">
                         Contact Us
                     </div>
                 </div>
             </div>
-            <div class="row ">
-                <div class="col-md-4 col-lg-3 ">
+            <div class="row position-relative justify-content-md-between" style="z-index: 2;">
+                <div class="col-md-4 col-lg-3 " data-aos="fade-up" data-aos-duration="1000">
                     <div class="icon-text mb-3 mb-lg-5">
-                        <div class="d-flex">
+                        <div class="d-flex justify-content-center justify-content-md-start">
                             <img src="assets/images/mail.png" alt="">
                             <div class="text">
                                 <strong>Email us at</strong>
                             </div>
                         </div>
-                        <a href="#">hello@westerncapital.com</a>
+                        <a href="mailto:hello@westerncapital.com" class="text-center text-md-start">hello@westerncapital.com</a>
                     </div>
+                </div>
+                <div class="col-md-4 col-lg-3 " data-aos="fade-up" data-aos-duration="1000">
                     <div class="icon-text">
-                        <div class="d-flex">
+                        <div class="d-flex justify-content-center justify-content-md-start">
                             <img src="assets/images/phone.png" alt="">
                             <div class="text">
                                 <strong>call us at</strong>
                             </div>
                         </div>
-                        <a href="#">+91 9876 543 210</a>
+                        <a href="tel:+91 22 4003 3356" class="text-center d-inline-block text-md-start">+91 22 4003 3356 /</a>
+                        <a href="tel:+91 22 825 6772" class="text-center d-inline-block text-md-start">+91 22 825 6772</a>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-3 offset-lg-1 mt-3 mt-md-0">
+                <!-- <div class="col-md-5 col-lg-3 offset-lg-1 mt-3 mt-md-0">
                     <div class="icon-text mb-4 mb-md-3">
                         <div class="d-flex">
                             <img src="assets/images/locate.png" alt="">
@@ -93,48 +98,46 @@
                                 <strong>visit us at</strong>
                             </div>
                         </div>
-                        <a href="#">Western Coperate Park
-                            Tower A Complex
-                            Bengaluru, Karnataka, India</a>
+                        <p class="link">Western Coperate Park Tower A Complex Bengaluru, Karnataka, India</p>
                     </div>
                     <a href="#" class="get-direction">get directions</a>
-                    <img src="/assets/images/direction-arrow.png" alt="" class="direction-arrow">
-                </div>
-                <div class="col-md-3 col-lg-4 offset-lg-1 mt-4 mt-md-0">
-                    <img src="assets/images/map.png" class="d-block w-100 map" alt="">
+                    <img src="assets/images/direction-arrow.png" alt="" class="direction-arrow">
+                </div> -->
+                <div class="col-md-3 col-lg-5  mt-4 mt-md-0" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="assets/images/map.png" class="d-block map" alt="">
                 </div>
             </div>
         </div>
     </section>
-    <section class="contact-form">
+    <section class="contact-form pt-3 pb-3 pb-md-5">
         <img src="assets/images/bg-patter.png" alt="" class="contact-page-bg-pattern d-none d-lg-block">
         <div class="container">
             <h3 class="title mb-3">
                 Have a Question?
             </h3>
-            <div class="subtitle text-center w-75 mx-auto">
+            <div class="subtitle text-center w-md-75 mx-auto">
                 We are happy to answer your questions. Please submit your queries below and we will get in touch with you.
             </div>
-            <div class="row justify-content-md-center mt-lg-5">
+            <div class="row justify-content-md-center mt-lg-5" data-aos="fade-up" data-aos-duration="1000">
                 <div class="col-md-10 col-lg-6">
-                    <form id="contact" action="" method="post">
+                    <form id="contact" method="post">
                         <fieldset>
                             <label>Full name</label>
-                            <input placeholder="" type="text" tabindex="1" required autofocus>
+                            <input placeholder="" type="text">
                         </fieldset>
                         <fieldset>
-                            <label>Your Phone Number</label>
-                            <input placeholder="" type="tel" tabindex="3" required>
+                            <label>Phone Number <span class="text-orange">*</span></label>
+                            <input placeholder="" type="tel">
                         </fieldset>
                         <fieldset>
-                            <label>Email id</label>
-                            <input placeholder="" type="email" tabindex="2" required>
+                            <label>Email id <span class="text-orange">*</span></label>
+                            <input placeholder="" type="email">
                         </fieldset>
                         <fieldset>
-                            <label>message</label>
-                            <textarea placeholder="" tabindex="5" required></textarea>
+                            <label>message <span class="text-orange">*</span></label>
+                            <textarea placeholder=""></textarea>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="mb-0">
                             <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
                         </fieldset>
                     </form>
@@ -142,28 +145,87 @@
             </div>
         </div>
     </section>
+    <section class="contact-us pt-3 pb-0 pb-md-5 bg-transparent">
+        <div class="container">
+            <h3 class="title">
+                Connect with one of our national offices
+            </h3>
+            <div class="live-map mt-md-5" data-aos="fade-up" data-aos-duration="1000">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 pe-md-0 position-relative">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232.512553214895!2d72.83329734285101!3d21.184178685891784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e438dd57eb7%3A0xe1de8056ca96efbf!2sWorld%20Trade%20Centre!5e0!3m2!1sen!2sin!4v1624960819096!5m2!1sen!2sin"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d404.9371344589306!2d72.8659576282865!3d19.112772467219795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c83980025da9%3A0xb61129f88fb20d72!2sDynasty%20Business%20Park!5e0!3m2!1sen!2sin!4v1624966771748!5m2!1sen!2sin"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="address-2"></iframe>
+                    </div>
+                    <div class="col-lg-4 px-4 ps-3 bg-light-grey pt-3 mt-md-0 d-flex flex-column justify-content-center">
 
+                        <div class="row ps-md-3">
+                            <div class="px-md-0 col-2 col-md-1">
+                                <img src="assets/images/locate.png" alt="" class="locate">
+
+                            </div>
+                            <div class="col-10 ps-0">
+                                <div class="address icon-text mb-4 mb-md-4">
+
+                                    <div class="d-flex">
+
+                                        <div class="text w-100 ms-0">
+                                            <strong>Registered office address:</strong>
+                                        </div>
+                                    </div>
+                                    <p class="link address-link-1">A-7001, World Trade Centre Ring Road, Surat, Gujarat, - 395002</p>
+                                </div>
+                                <div class="address icon-text ">
+                                    <div class="d-flex">
+
+                                        <div class="text w-100 ms-0">
+                                            <strong>corporate office address:</strong>
+                                        </div>
+                                    </div>
+                                    <p class="link address-link-2">C-402,Business Plaza, Andheri Kurla Road, Andheri (East), Mumbai - 400093</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="address-type-2 icon-text mb-3 mb-md-5">
+
+                                    <span>Registered office address:</span>
+                            <p class=" address-link-1 mb-0">A-7001, World Trade Centre Ring Road, Surat, Gujarat, - 395002</p>
+                        </div>
+                        <div class="address-type-2 mb-3 mb-md-0 icon-text ">
+
+                                    <span>Corporate office address:</span>
+                            <p class=" address-link-2">C-402,Business Plaza, Andheri Kurla Road, Andheri (East), Mumbai - 400093</p>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- ============ End ============= -->
     <footer class="position-relative">
         <div class="container">
             <div class="footer-brand">
-                <a href="#"><img alt="logo" src="assets/images/LOGO1.png" class="footer-logo"></a>
+                <a href="https://chaitanya-ajency.github.io/western-capital/"><img alt="logo" src="assets/images/LOGO1.png" class="footer-logo"></a>
             </div>
-            <div class="row">
-                <div class="col-6 col-md-4">
+            <div class="vertical-line"></div>
+
+            <div class="row ">
+                <div class="col-12 col-md-4 col-left">
                     <ul class="text-md-start">
                         <li>
-                            <a href="#">About us</a>
+                            <a href="https://chaitanya-ajency.github.io/western-capital/aboutus">About us</a>
                         </li>
                         <li>
-                            <a href="#">Advisor</a>
+                            <a href="https://chaitanya-ajency.github.io/western-capital/advisors">Advisors</a>
                         </li>
                         <li>
-                            <a href="#">Promoters</a>
+                            <a href="https://chaitanya-ajency.github.io/western-capital/promoter">Promoters</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-4">
+                <div class="col-12 col-md-4 col-mid pt-10">
                     <ul class="social-login">
                         <li>
                             <a href="#">
@@ -183,22 +245,21 @@
                     </ul>
                 </div>
 
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 col-right">
                     <ul class="text-md-end">
                         <li>
-                            <a href="#">regulatory</a>
+                            <a href="https://chaitanya-ajency.github.io/western-capital/regulatory">regulatory</a>
                         </li>
                         <li>
-                            <a href="#">Terms and Conditions</a>
+                            <a href="https://chaitanya-ajency.github.io/western-capital/terms-and-condition">Terms & Conditions</a>
                         </li>
                         <li>
-                            <a href="#">Contact us</a>
+                            <a href="https://chaitanya-ajency.github.io/western-capital/contact-us">Contact us</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <img src="assets/images/footer_pattern.png" class="footer-pattern" alt="">
-            <div class="vertical-line"></div>
         </div>
         <div class="copyright-footer">
             <div class="container">
@@ -209,29 +270,74 @@
     </footer>
 
 
+
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js" integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/1.1.6/waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <script>
-        // $(document).ready(function() {
-        //     $(window).scroll(function() {
-        //         var scroll = $(window).scrollTop();
-        //         if (scroll > 50) {
-        //             $(".navbar").addClass('scrolled-down').removeClass('scrolled-top');
+        AOS.init();
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll > 50) {
+                    $(".navbar").addClass('scrolled-down').addClass('header-shadow').removeClass('scrolled-top');
 
-        //         };
-        //         if (scroll < 50) {
-        //             $(".navbar").addClass('scrolled-top').removeClass('scrolled-down');
+                };
+                if (scroll < 50) {
+                    $(".navbar").addClass('scrolled-top').removeClass('header-shadow');
 
-        //         }
-        //     })
-        // });
+                }
+            })
+        });
+        $(document).ready(function() {
+
+
+            $(".dropdown-toggle").mouseenter(function() {
+                $('.dropdown-menu').addClass("show-dropdown");
+            });
+            $(".dropdown-menu").mouseleave(function(e) {
+                var value = $(".dropdown-menu").length;
+                if ($(e.target).closest(".dropdown-menu").length === 1) {
+                    $('.dropdown-menu').removeClass("show-dropdown");
+
+                }
+            });
+        });
+        $(document).ready(function() {
+            $(".navbar-toggler").click(function() {
+                $('.navbar').toggleClass("bg-white");
+                $('.fa-bars').toggleClass("text-dark");
+            });
+        });
+
+        $(document).ready(function() {
+            $('.address-2').hide();
+            $(".address-link-2").click(function() {
+                $('.address-2').show();
+            });
+            $(".address-link-1").click(function() {
+                $('.address-2').hide();
+            });
+        });
+    </script>
+    <script>
+        // Create a Marker
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            title: 'Sample Tool Tip'
+        });
+
+
+        // Set Icon on any event
+        google.maps.event.addListener(marker, "rightclick", function() {
+            marker.setIcon('blank.png'); // set image path here...
+        });
     </script>
 </body>
 
